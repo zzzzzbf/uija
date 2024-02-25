@@ -1,0 +1,210 @@
+/* 使用思源字体 */
+@font-face {
+    font-family: 'Source Han Serif';
+    src: url(../fonts/SourceHanSerifSC-VF.otf.woff2) format('woff2');
+}
+
+/* 设置导航栏样式 */
+
+#navbar {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100vw;
+
+    /*height: 50px;*/
+    /* //一直将导航栏置于最顶层 */
+    z-index: 999;
+    /*!* //设置透明度 *!*/
+    /*background-color: rgb(236, 241, 236, 0.3);*/
+
+    background-color: #00000070;
+
+    transition: background-color 0.3s;
+
+}
+
+/* Navigation */
+.navbar {
+    padding-top: 1.75rem;
+    background-color: transparent;
+    box-shadow: none;
+    transition: all 0.2s;
+}
+
+.navbar.extra-page {
+    padding-top: 0.5rem;
+}
+
+.navbar.top-nav-collapse {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+/************************/
+/*     Testimonials     */
+/************************/
+.slider-1 {
+    background-color: #f9f8f8;
+}
+
+.slider-1 .section-title {
+    text-align: center;
+}
+
+.slider-1 .h2-heading {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
+/********************/
+/*     Features     */
+/********************/
+.cards-1 {
+    /*padding-top: 9rem;*/
+    padding-bottom: 3.75rem;
+    text-align: center;
+}
+
+.cards-1 .h2-heading {
+    margin-bottom: 3.75rem;
+}
+
+.cards-1 .h2-heading span {
+    color: #f25c05;
+    text-decoration: underline;
+}
+
+.cards-1 .card {
+    margin-bottom: 5rem;
+    border: none;
+    background-color: transparent;
+}
+
+.cards-1 .card-icon {
+    width: 76px;
+    height: 76px;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    border-radius: 10px;
+    background-color: #efebfd;
+}
+
+.cards-1 .card-icon .fas,
+.cards-1 .card-icon .far {
+    color: #8763ee;
+    font-size: 2.5rem;
+    line-height: 76px;
+}
+
+.cards-1 .card-icon.green {
+    background-color: #defaeb;
+}
+
+.cards-1 .card-icon.green .fas,
+.cards-1 .card-icon.green .far {
+    color: #00d462;
+}
+
+.cards-1 .card-icon.blue {
+    background-color: #e2ebfd;
+}
+
+.cards-1 .card-icon.blue .fas,
+.cards-1 .card-icon.blue .far {
+    color: #1f68f3;
+}
+
+.cards-1 .card-body {
+    padding: 0;
+}
+
+.cards-1 .card-title {
+    margin-bottom: 1rem;
+}
+
+.cards-1 .card-body p {
+    margin-bottom: 1.125rem;
+}
+
+
+/*********************/
+/*     Details 1     */
+/*********************/
+.basic-1 {
+    padding-top: 9.5rem;
+    padding-bottom: 10rem;
+}
+
+.basic-1 .text-container {
+    margin-bottom: 4rem;
+}
+
+.basic-1 h2 {
+    margin-bottom: 1.875rem;
+}
+
+.basic-1 p {
+    margin-bottom: 1.875rem;
+}
+
+.basic-1 .btn-solid-reg {
+    cursor: pointer;
+}
+
+/* Features */
+.cards-1 .card {
+    display: inline-block;
+    width: 286px;
+    vertical-align: top;
+}
+
+.cards-1 .card:nth-of-type(3n+2) {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+/* end of features */
+
+
+/* Details 1 */
+.basic-1 .text-container {
+    margin-bottom: 0;
+}
+
+/* end of details 1 */
+
+/* Details 2 */
+.basic-2 {
+    padding-top: 9.5rem;
+    padding-bottom: 10rem;
+}
+
+.basic-2 .image-container {
+    margin-bottom: 0;
+}
+
+.basic-2 .image-container .img-fluid {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* end of details 2 */
+
+.li-space-lg li {
+    margin-bottom: 2rem;
+}
+
+.li-space-lg li .h2-heading {
+    margin-bottom: 3.75rem;
+    text-align: center;
+}
