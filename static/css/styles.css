@@ -215,7 +215,7 @@
     top: 6rem;
     /* adjusts the height between the top of the page and the offcanvas menu */
     bottom: 0;
-    left: 100%;
+    right: 100%;
     width: 100%;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -229,8 +229,9 @@
 
 .offcanvas-collapse.open {
     visibility: visible;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+    /*-webkit-transform: translateX(-100%) ;*/
+    /*transform: translateX(-100%);*/
+    transform: translateX(100%);
 }
 
 .navbar .navbar-nav {
