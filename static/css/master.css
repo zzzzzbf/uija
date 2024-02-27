@@ -34,14 +34,14 @@ a:focus {outline:none;outline-offset:0;}
 .class{width: 280px;height: 100%;overflow: hidden;position: fixed;top: 0;left: 0;z-index: 51;background: #63a979;}
 .class.on{box-shadow: 2px 0px 10px 2px #545454;}
 .m_list{width: 100%;height: 80%;overflow-y: auto;position: relative;overflow-x: hidden;}
-.m_list ul{padding-top: 20px;}
-.m_list ul li{border-bottom: 1px solid #63a979;font-size: 16px;}
+/*.m_list ul{padding-top: 20px;}*/
+.m_list ul li{border-bottom: 1px solid #333;font-size: 16px;}
 .m_list ul li a{display: block;color: #FFF;line-height: 40px;height: 40px;overflow: hidden;padding: 0 35px 0 15px;position: relative;}
 .m_list ul li a span{width: 10px;height: 100%;background: url(../images/m_one.png) center center no-repeat;position: absolute;right: 15px;top: 0;background-size: 100%!important;}
 .m_list ul li a span.close_one{background: url(../images/m_one_h.png) center center no-repeat;}
 .m_list ul li a span.close_two{background: url(../images/m_two_h.png) center center no-repeat;}
 .m_list ul li a:hover,.m_list ul li a.cu1{}
-.m_list ul li ul{width: 100%;height: 100%;padding-top: 0px;position: absolute;top: 0;left: 100%;background: #63a979;z-index: 52;}
+.m_list ul li ul{width: 100%;height: 100%;padding-top: 0px;position: absolute;top: 0;left: 100%;background: rgba(0,0,0,0);z-index: 52;}
 .m_list ul li ul .class_back{line-height: 60px;height: 60px;font-size: 17px;color: #63a979;padding: 0 15px;text-indent: 20px;background: url(../images/class_back.png) #fff 15px center no-repeat;background-size: 10px;}
 .m_list ul li ul li{}
 .m_list ul li ul li a{}
@@ -94,7 +94,8 @@ transform:translate3d(0, 0, 0);
 /*.logo{width: 160px;height: 48px;font-size: 0px;position: absolute;left: 15px;top: 2px;z-index: 4;}*/
 .logo{
     position: absolute;
-    left: 46%;
+    left: 50%;
+    transform: translate(-50%);
     /*top: 50%;*/
     /*transform: translate(-50%,-50%);*/
 }
@@ -146,12 +147,14 @@ transform:translate3d(0, 0, 0);
 .search_input{width: 100%;padding: 0 10px;border: none;background: none;outline: none;height: 30px;line-height: 30px;}
 .search_btn{width: 60px;height: 30px;line-height: 30px;text-align: center;position: absolute;top: 0;right: 0;background: #262626;color: #fff;outline: none;border: none;}
 
-.mheader{width: 100%;height: auto;background: #63a979;box-shadow: 0px 0px 5px 2px #dbdada;position: relative;z-index: 3;padding: 0 1% ;display: none;}
-.mlogo{width: 50%;height: 68px;font-size: 0px;overflow: hidden;z-index: 3;}
+/*.mheader{width: 100%;height: auto;background: #63a979;box-shadow: 0px 0px 5px 2px #dbdada;position: relative;z-index: 3;padding: 0 1% ;display: none;}*/
+.mheader{width: 100%;height: auto;    position: relative;z-index: 3;padding: 0 1% ;display: none;}
+/*.mlogo{width: 50%;height: 68px;font-size: 0px;overflow: hidden;z-index: 3;}*/
+.mlogo{position: absolute;top:0px; left: 50%;transform: translateX(-50%);overflow: hidden;z-index: 3;}
 .mlogo a{display: block;height: 100%;overflow: hidden;}
 .mlogo i{width: 100%;height: 70px;display: table-cell;vertical-align: middle;}
 .mlogo i img{max-width: 100%;max-height: 100%;}
-.nav_button{width: 30px;height: 100%;background: url(../images/head_menu.png) center center no-repeat;background-size: 26px;position: absolute;right: 4%;top: 0px;}
+.nav_button{width: 30px;height: 100%;background: url(../images/head_menu.png) center center no-repeat;background-size: 26px;position: absolute;left: 4%;top: 0px;}
 .msearch{width: 30px;height: 100%;position: absolute;top: 0;right: 12%;background: url(../images/mc_sear.png) center center no-repeat;background-size: 24px;}
 .msearch_box{width: 100%;height: auto;padding: 15px 20px;overflow: hidden;position: absolute;right: 0;background: #3759f0;display: none;}
 .msearch_box form{width: 100%;height: 30px;overflow: hidden;background: #fff;position: relative;padding-right: 60px;}
