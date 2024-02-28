@@ -70,6 +70,7 @@ let elements = document.querySelectorAll(".nav-link:not(.dropdown-toggle)");
 for (let i = 0; i < elements.length; i++) {
     elements[i].addEventListener("click", () => {
         document.querySelector(".offcanvas-collapse").classList.toggle("open");
+        document.querySelector(".n-hamburger-menu-bars").classList.toggle("open");
     });
 }
 
@@ -77,6 +78,21 @@ let selectors = document.querySelector(".navbar-toggler");
 if(selectors !== null){
     selectors.addEventListener("click", () => {
         document.querySelector(".offcanvas-collapse").classList.toggle("open");
+        // 切换头部菜单按钮图标
+        let i = document.querySelector("#head_menu")
+        if (i !== null ) {
+            i.classList.toggle("n-header-crossing-icon");
+            i.classList.toggle("n-hamburger-menu-bars");
+        }
+
+        document.querySelector("#navbar").classList.toggle('main-navigation');
+
+
+        var navbar = document.getElementById("navbar");
+        if(!navbar.classList.contains('top-nav-collapse')){
+            navbar.style.removeProperty("background-color");
+            navbar.style.removeProperty("height");
+        }
     });
 }
 

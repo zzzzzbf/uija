@@ -5,7 +5,7 @@
     <title>有加官网</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
-    <link href="static/picture/plg.jpg" rel="shortcut icon" type="image/x-icon"/>
+    <link href="../static/picture/plg.jpg" rel="shortcut icon" type="image/x-icon"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -14,208 +14,135 @@
     <link rel="stylesheet" type="text/css" href="../static/css/animate.css"/>
     <link rel="stylesheet" type="text/css" href="../static/css/master.css"/>
     <link rel="stylesheet" type="text/css" href="../static/css/styles.css"/>
+    <link rel="stylesheet" href="../static/css/scrollCue.css" type="text/css" media="all">
     <script type="text/javascript" src="../static/js/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="../static/js/swiper-3.3.1.jquery.min.js"></script>
     <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../static/js/jquery.superslide.2.1.1.js"></script>
     <script type="text/javascript" src="../static/js/jquery.superslide.2.1.1.source.js"></script>
     <script type="text/javascript" src="../static/js/wow.min.js"></script>
+    <script type="text/javascript" src="../static/js/scrollCue.min.js"></script>
 </head>
 <body>
 <div class="wrapper">
-    <div class="class page-prev visible-xs visible-sm">
-        <div class="m_list">
-            <ul class="m_one">
-                <li><a href="#">首页</a></li>
-                <li><a href="javascript:;"> 美好有加 </a>
-                    <ul class="m_two">
-                        <div class="class_back">美好有加</div>
-                        <li><a href="mhyj/pqjs.html">品牌介绍 </a></li>
-                        <li><a href="mhyj/pqln.html">品牌理念 </a></li>
-                        <li><a href="mhyj/ppfz.html">品牌历程</a></li>
-
-                        <li><a href="mhyj/ryzz.html">荣誉资质</a></li>
-
-                    </ul>
-                </li>
-                <li><a href="ppgs.html"> 产品故事 </a>
-
-
-                </li>
-
-                <li><a href="yjsj.html">资讯中心</a></li>
-                <li><a href="lxwm.html"> 联系我们</a></li>
-
-                </li>
-            </ul>
-        </div>
+    <div class="wrap">
+        <!--  <div class="top">
+       <div class="container">
+         <div class="top_nr">       <div class="language">
+             <ul>
+                         <li><a href="" class="on">简体中文</a></li>
+                         <li><a href="en" class="">English</a></li>
+                       </ul>
+           </div>
+                 <div class="tel">服务热线：400-673-7687</div>
+         </div>
+       </div>
+     </div> -->
     </div>
+    <div class="mheader">
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+            <div class="mlogo"><a href="../m.html"><i><img src="../static/picture/uija.png"></i></a></div>
+            <!--        <div class="nav_button"></div>-->
+            <!--        <div class="navbar-toggler p-0 border-0 nav_button" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">-->
+            <!--&lt;!&ndash;            <span class="navbar-toggler-icon"></span>&ndash;&gt;-->
+            <!--        </div>-->
+            <div class="n-hamburger-menu navbar-toggler p-0 border-0">
+                <div class="n-hamburger-menu-inner"><i id="head_menu" class="n-hamburger-menu-bars"></i></div>
+            </div>
+            <div class="m_list navbar-collapse offcanvas-collapse mobile-menu" id="navbarsExampleDefault">
+                <!--            <nav class="brindor_menu mean-nav">-->
+                <!--                <ul class="nav_scroll">-->
+                <!--                    <li><a href="">Home</a></li>-->
+                <!--                    <li><a href="#">About Us<span><i class="fas fa-chevron-down"></i></span></a>-->
+                <!--                        <ul class="sub-menu">-->
+                <!--                            <li><a href="about.html">About</a></li>-->
+                <!--                            <li><a href="service.html">Service</a></li>-->
+                <!--                            <li><a href="service-details.html">Service Details</a></li>-->
+                <!--                            <li><a href="team.html">Team</a></li>-->
+                <!--                            <li><a href="team-details.html">Team Details</a></li>-->
+                <!--                            <li><a href="testimonial.html">Testimonial</a></li>-->
+                <!--                            <li><a href="floor-repair.html">Floor Repair</a></li>-->
+                <!--                            <li><a href="portfolio.html">Portfolio</a></li>-->
+                <!--                            <li><a href="portfolio-details.html">Portfolio details</a></li>-->
+                <!--                            <li><a href="contact.html">Contact</a></li>-->
+                <!--                        </ul>-->
+                <!--                    </li>-->
+                <!--                    <li><a href="gallery.html">Gallery</a></li>-->
+                <!--                    <li><a href="#">Blog<span><i class="fas fa-chevron-down"></i></span></a>-->
+                <!--                        <ul class="sub-menu">-->
+                <!--                            <li><a href="blog.html">Blog Grid</a></li>-->
+                <!--                            <li><a href="blog-list.html">Blog List</a></li>-->
+                <!--                            <li><a href="blog-details.html">Blog Details</a></li>-->
+                <!--                        </ul>-->
+                <!--                    </li>-->
+                <!--                    <li><a href="contact.html">Contact Us</a></li>-->
+                <!--                </ul>-->
+                <!--            </nav>-->
 
-    <!--<div class="header">
-      <div class="container">
-        <div class="logo"><a href="index.html"><i><img src="static/picture/111.png" alt="有加"></i></a></div>
-        <div class="nav">
-          <ul class="one">
-            <li class="on"><a href="index.html">首页</a></li>
-                    <li class=""> <a href="guanyuwomen/index.html">关于有加 </a>           <div class="two_box">
-                <ul class="two fl">
-                                <li><a href="guanyuwomen/index.html">品牌介绍</a></li>
-                                <li><a href="guanyuwomen/qiyewenhua/index.html">企业文化</a></li>
-                                <li><a href="guanyuwomen/fazhanlicheng/index.html">发展历程</a></li>
-                              </ul>
-              </div>
-               </li>
-                    <li class=""> <a href="chanpinzhongxin/index.html">产品中心 </a>           <div class="two_box">
-                <ul class="two fl">
-                                <li><a href="chanpinzhongxin/chunshuiji/index.html">净水器 </a></li>
-                                <li><a href="chanpinzhongxin/guanxianji/index.html">管线机 </a></li>
-                                <li><a href="chanpinzhongxin/guolvqi/index.html">前置过滤器 </a></li>
-                                <li><a href="chanpinzhongxin/muyubao/index.html">沐浴宝</a></li>
-                                <li><a href="chanpinzhongxin/ruanshuiji/index.html">中央饮水机</a></li>
-                              </ul>
-              </div>
-               </li>
-                    <li class=""> <a href="anlizhanshi/index.html">美好有加 </a>  </li>
-                    <li class=""> <a href="xinwenzixun/index.html">新闻资讯 </a>  </li>
-
-     <li class=""> <a href="lianxiwomen/index.html">联系我们</a>  </li>
-
-                           </div>
-               </li>
-
-
-        </div>-->
-
-</div>
-</div>
-<div class="mheader">
-    <!--    <div class="mlogo"><a href="#"><i><img src="static/picture/222.png" ></i></a></div>-->
-    <!--    <div class="msearch"></div>-->
-    <!--    <div class="msearch_box">-->
-    <!--        <form method="get" action="index.php?m=home&c=Search&a=lists&lang=cn">-->
-    <!--            <input type="hidden" name="m" value="home"/><input type="hidden" name="c" value="Search"/><input-->
-    <!--                type="hidden" name="a" value="lists"/><input type="hidden" name="lang" value="cn"/> <input type="type"-->
-    <!--                                                                                                           class="msearch_input"-->
-    <!--                                                                                                           name="k"-->
-    <!--                                                                                                           id="keywords">-->
-    <!--            <input type="submit" value="搜索" class="msearch_btn">-->
-    <!--        </form>-->
-    <!--    </div>-->
-    <!--    <div class="nav_button"></div>-->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation" style="height: 7%;">
-        <div class="mlogo"><a href="../m.html"><i><img src="../static/picture/222.png" ></i></a></div>
-        <!--        <div class="nav_button"></div>-->
-        <div class="navbar-toggler p-0 border-0 nav_button" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-            <!--            <span class="navbar-toggler-icon"></span>-->
-        </div>
-        <div class="m_list navbar-collapse offcanvas-collapse mobile-menu" id="navbarsExampleDefault">
-            <!--            <nav class="brindor_menu mean-nav">-->
-            <!--                <ul class="nav_scroll">-->
-            <!--                    <li><a href="">Home</a></li>-->
-            <!--                    <li><a href="#">About Us<span><i class="fas fa-chevron-down"></i></span></a>-->
-            <!--                        <ul class="sub-menu">-->
-            <!--                            <li><a href="about.html">About</a></li>-->
-            <!--                            <li><a href="service.html">Service</a></li>-->
-            <!--                            <li><a href="service-details.html">Service Details</a></li>-->
-            <!--                            <li><a href="team.html">Team</a></li>-->
-            <!--                            <li><a href="team-details.html">Team Details</a></li>-->
-            <!--                            <li><a href="testimonial.html">Testimonial</a></li>-->
-            <!--                            <li><a href="floor-repair.html">Floor Repair</a></li>-->
-            <!--                            <li><a href="portfolio.html">Portfolio</a></li>-->
-            <!--                            <li><a href="portfolio-details.html">Portfolio details</a></li>-->
-            <!--                            <li><a href="contact.html">Contact</a></li>-->
-            <!--                        </ul>-->
-            <!--                    </li>-->
-            <!--                    <li><a href="gallery.html">Gallery</a></li>-->
-            <!--                    <li><a href="#">Blog<span><i class="fas fa-chevron-down"></i></span></a>-->
-            <!--                        <ul class="sub-menu">-->
-            <!--                            <li><a href="blog.html">Blog Grid</a></li>-->
-            <!--                            <li><a href="blog-list.html">Blog List</a></li>-->
-            <!--                            <li><a href="blog-details.html">Blog Details</a></li>-->
-            <!--                        </ul>-->
-            <!--                    </li>-->
-            <!--                    <li><a href="contact.html">Contact Us</a></li>-->
-            <!--                </ul>-->
-            <!--            </nav>-->
-
-            <ul class="m_one navbar-nav ms-auto navbar-nav-scroll">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">美好有加</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                        <li><a class="dropdown-item" href="mhyj/ppjs.html">品牌介绍</a></li>
-                        <li>
-                            <div class="dropdown-divider"></div>
-                        </li>
-                        <li><a class="dropdown-item" href="mhyj/pqln.html">品牌理念</a></li>
-                        <li>
-                            <div class="dropdown-divider"></div>
-                        </li>
-                        <li><a class="dropdown-item" href="mhyj/ppfz.html">品牌历程</a></li>
-                        <li>
-                            <div class="dropdown-divider"></div>
-                        </li>
-                        <li><a class="dropdown-item" href="mhyj/r0yzz.html">荣誉资质</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">系列产品</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                        <li><a class="dropdown-item" href="mhyj/ppjs.html">容与</a></li>
-                        <li>
-                            <div class="dropdown-divider"></div>
-                        </li>
-                        <li><a class="dropdown-item" href="mhyj/pqln.html">昕辰</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">有加生活</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                        <li><a class="dropdown-item" href="mhyj/ppjs.html">周边商城</a></li>
-                    </ul>
-                </li>
-                <!--                <li class="nav-item">-->
-                <!--                    <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">联系我们</a>-->
-                <!--                    <ul class="dropdown-menu" aria-labelledby="dropdown04">-->
-                <!--                        <li><a class="dropdown-item" href="mhyj/ppjs.html">周边商城</a></li>-->
-                <!--                    </ul>-->
-                <!--                </li>-->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">联系我们</a>
-                </li>
-                <!--                <li class="nav-item dropdown">-->
-                <!--                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>-->
-                <!--                    <ul class="dropdown-menu" aria-labelledby="dropdown01">-->
-                <!--                        <li><a class="dropdown-item" href="article.html">Article Details</a></li>-->
-                <!--                        <li>-->
-                <!--                            <div class="dropdown-divider"></div>-->
-                <!--                        </li>-->
-                <!--                        <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>-->
-                <!--                        <li>-->
-                <!--                            <div class="dropdown-divider"></div>-->
-                <!--                        </li>-->
-                <!--                        <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>-->
-                <!--                    </ul>-->
-                <!--                </li>-->
-            </ul>
-        </div> <!-- end of navbar-collapse -->
-    </nav>
+                <ul class="m_one navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                           aria-expanded="false">美好有加</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="./ppjs.html">品牌介绍</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item" href="./pqln.html">品牌理念</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item" href="./ppfz.html">品牌历程</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item" href="./r0yzz.html">荣誉资质</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown"
+                           aria-expanded="false">系列产品</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                            <li><a class="dropdown-item" href="./ppjs.html">容与</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item" href="./pqln.html">昕辰</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+                           aria-expanded="false">有加生活</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                            <li><a class="dropdown-item" href="./ppjs.html">周边商城</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">联系我们</a>
+                    </li>
+                </ul>
+            </div> <!-- end of navbar-collapse -->
+        </nav>
+    </div>
 </div>
 
-    <div class="banner ibanner">
-        <div class="swiper-container swiper-container-banner">
-            <!-- <div class="none">
-                         <li class="swiper-slide swiper-slide-banner"><img src="../static/picture/01.jpg" alt="幻一" usemap="#Map" >
-                           <map name="Map">
-                           <area shape="rect" coords="356,10,429,32" href="guanyu.html">
-                             <area shape="rect" coords="492,10,559,32" href="chpin.html">
-                             <area shape="rect" coords="624,10,694,32" href="#">
-                             <area shape="rect" coords="926,10,1020,32" href="index.html">
-                           </map>
-                         </li>
 
-                      </div>-->
 
-            <li class="swiper-slide swiper-slide-banner"><img src="../static/picture/11.jpg" alt="幻一" style="margin: 0px; padding: 0px; border: 0px none; vertical-align: baseline; width: 100%; height: 100%;>
+<div class="banner ibanner">
+    <div class="swiper-container swiper-container-banner">
+        <!-- <div class="none">
+                     <li class="swiper-slide swiper-slide-banner"><img src="../static/picture/01.jpg" alt="幻一" usemap="#Map" >
+                       <map name="Map">
+                       <area shape="rect" coords="356,10,429,32" href="guanyu.html">
+                         <area shape="rect" coords="492,10,559,32" href="chpin.html">
+                         <area shape="rect" coords="624,10,694,32" href="#">
+                         <area shape="rect" coords="926,10,1020,32" href="index.html">
+                       </map>
+                     </li>
+
+                  </div>-->
+
+        <li class="swiper-slide swiper-slide-banner"><img src="../static/picture/11.jpg" alt="幻一" style="margin: 0px; padding: 0px; border: 0px none; vertical-align: baseline; width: 100%; height: 100%;>
 
                     </li>
                     <li class=" swiper-slide swiper-slide-banner"><img src="../static/picture/12.jpg" alt="幻一" style="margin: 0px; padding: 0px; border: 0px none; vertical-align: baseline; width: 100%; height: 100%;>
@@ -234,12 +161,12 @@
 
 
  <!--<div class=" swiper-button-prev swiper-button-prev-banner fadeInLeft wow">
-        </div>
-        -->
-        <!--<div class="swiper-button-next swiper-button-next-banner fadeInRight wow"></div>-->
-
-
     </div>
+    -->
+    <!--<div class="swiper-button-next swiper-button-next-banner fadeInRight wow"></div>-->
+
+
+</div>
 </div>
 </div>
 <div>
@@ -270,7 +197,8 @@
 <div class="opacity"></div>
 <div class="totop"></div>
 
-<!--<script src="../static/js/main.js"></script>-->
 <script type="text/javascript" src="../static/js/scripts.js"></script>
+<script type="text/javascript" src="../static/js/main.js"></script>
+
 </body>
 </html>
