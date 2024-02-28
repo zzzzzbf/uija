@@ -118,27 +118,27 @@ $(document).ready(function() {
         $("html,body").animate({scrollTop:'0px'},800);
     });
 
-    //隐藏导航跟wrap的切换
-    $(".nav_button").click(function(){
-        $(".class").removeClass("page-prev").addClass("page-in on");
-        $(".wrap").removeClass("page-active").addClass("page-next page-in")
-        $(".opacity").show()
-        pageSlideOver();
-    })
-    $(".opacity").on('click touchstart',function(){
-        $(".class").addClass("page-prev page-out").removeClass('on')
-        $(".wrap").removeClass("page-next").addClass(" page-out")
-        $(".opacity").fadeOut();
-        pageSlideOver();
-    })
-    function pageSlideOver(){
-        $('.page-out').on('transitionend', function(){
-            $(this).removeClass('page-out');
-        });
-        $('.page-in').on('transitionend', function(){
-            $(this).removeClass('page-in');
-        });
-    }
+    //隐藏导航跟wrap的切换（作废）
+    // $(".nav_button").click(function(){
+    //     $(".class").removeClass("page-prev").addClass("page-in on");
+    //     $(".wrap").removeClass("page-active").addClass("page-next page-in")
+    //     $(".opacity").show()
+    //     pageSlideOver();
+    // })
+    // $(".opacity").on('click touchstart',function(){
+    //     $(".class").addClass("page-prev page-out").removeClass('on')
+    //     $(".wrap").removeClass("page-next").addClass(" page-out")
+    //     $(".opacity").fadeOut();
+    //     pageSlideOver();
+    // })
+    // function pageSlideOver(){
+    //     $('.page-out').on('transitionend', function(){
+    //         $(this).removeClass('page-out');
+    //     });
+    //     $('.page-in').on('transitionend', function(){
+    //         $(this).removeClass('page-in');
+    //     });
+    // }
 
     $(".m_two").siblings('a').append('<span></span>');
     $(".m_three").siblings('a').append('<span></span>');
