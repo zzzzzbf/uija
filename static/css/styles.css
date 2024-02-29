@@ -148,7 +148,7 @@ html {
 /*     Details 1     */
 /*********************/
 .basic-1 {
-    padding-top: 9.5rem;
+    padding-top: 7rem;
     padding-bottom: 10rem;
 }
 
@@ -166,6 +166,86 @@ html {
 
 .basic-1 .btn-solid-reg {
     cursor: pointer;
+}
+
+.call-to-action-section {
+    background: url(../picture/gw_03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0 320px;
+    color: white;
+}
+.call-action-content {
+    margin-top: 3.4rem;
+    text-align: center;
+}
+.call-action-title h1 {
+    font-size: 46px;
+    font-weight: 400;
+    text-align: center;
+}
+.call-action-des{
+    padding-top: 2rem;
+}
+.call-action-des p {
+    font-size: 36px;
+    font-weight: 300;
+    width: 38%;
+    margin: 2rem auto;
+    line-height: 1.5;
+}
+
+.section-button {
+    height: 45px;
+    margin-top: 23px;
+    display: inline-block;
+    border: 1px solid white;
+}
+
+.section-button a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+    display: inline-block;
+    background-color: rgb(0, 0, 0, 0);
+    padding: 13px 36px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.section-button a::after {
+    position: absolute;
+    top: 0;
+    left: -5%;
+    right: auto;
+    bottom: auto;
+    width: 110%;
+    height: 200%;
+    background:#fff;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: skewY(-10deg) scale(1, 0);
+    transform: skewY(-10deg) scale(1, 0);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    content: "";
+    z-index: -1;
+}
+
+.section-button a:hover:after{
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: skewY(-10deg) scale(1, 1);
+    transform: skewY(-10deg) scale(1, 1);
+}
+
+.section-button:hover a{
+    color: black;
 }
 
 /* Features */
@@ -192,7 +272,7 @@ html {
 
 /* Details 2 */
 .basic-2 {
-    padding-top: 9.5rem;
+    padding-top: 7.5rem;
     padding-bottom: 10rem;
 }
 
