@@ -1,7 +1,95 @@
 $(document).ready(function() {
 	//banner
-    $('.swiper-container-banner').swiper({pagination: '.swiper-pagination-banner li',slidesPerView: 1,paginationClickable: true,spaceBetween: 0,autoplay:5500,speed: 800, autoplayDisableOnInteraction:false,nextButton: '.swiper-button-next-banner',prevButton: '.swiper-button-prev-banner'});
-    
+    let swiperBanner =  document.querySelector(".swiper");
+
+    if(swiperBanner!=null){
+        $('.swiper-container-banner').swiper({pagination: '.swiper-pagination-banner li',slidesPerView: 1,paginationClickable: true,spaceBetween: 0,autoplay:5500,speed: 800, autoplayDisableOnInteraction:false,nextButton: '.swiper-button-next-banner',prevButton: '.swiper-button-prev-banner'});
+        var swiper = new Swiper('.swiper-container-menu', {
+            slidesPerView: 5,
+            slidesPerColumn: 1,
+            spaceBetween: 0,
+            autoplay:4000,
+            preventClicks : false,
+            nextButton: '.swiper-button-next-menu',
+            prevButton: '.swiper-button-prev-menu',
+            paginationClickable: true,
+            breakpoints: {
+                991: {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                },
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+                567: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+                372: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                }
+            }
+        });
+
+        var swiper = new Swiper('.swiper-container-pro', {
+            slidesPerView: 4,
+            slidesPerColumn: 1,
+            spaceBetween: 20,
+            autoplay:4000,
+            preventClicks : false,
+            nextButton: '.swiper-button-next-pro',
+            prevButton: '.swiper-button-prev-pro',
+            paginationClickable: true,
+            breakpoints: {
+                1199: {
+                    slidesPerView: 4,
+                    spaceBetween: 16,
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 12,
+                },
+                767: {
+                    slidesPerView: 2,
+                    spaceBetween: 18,
+                },
+                567: {
+                    slidesPerView: 2,
+                    spaceBetween: 12,
+                },
+                372: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                }
+            }
+        });
+
+        //产品详情页 多图轮播 手机
+        var galleryTop = new Swiper('.gallery-top', {
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 10,
+            loop:true,
+            loopedSlides: 4, //looped slides should be the same
+            initialSlide :0,  //设定初始化时slide的索引。
+        });
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            loop:true,
+            loopedSlides: 4, //looped slides should be the same
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            touchRatio: 0.2,
+            initialSlide :0,  //设定初始化时slide的索引。
+            slideToClickedSlide: true
+        });
+        galleryTop.params.control = galleryThumbs;
+        galleryThumbs.params.control = galleryTop;
+    }
+
     //计算navbar宽度
     function menuwidth(){
         var width=$(".nav" ).width();
@@ -38,67 +126,7 @@ $(document).ready(function() {
     	$(this).siblings('.msearch_box').slideToggle(400);
     });
 
-    var swiper = new Swiper('.swiper-container-menu', {
-        slidesPerView: 5,
-        slidesPerColumn: 1,
-        spaceBetween: 0,
-        autoplay:4000,
-        preventClicks : false,
-        nextButton: '.swiper-button-next-menu',
-        prevButton: '.swiper-button-prev-menu',
-        paginationClickable: true,
-        breakpoints: {
-            991: {
-              slidesPerView: 4,
-              spaceBetween: 0,
-            },
-            767: {
-              slidesPerView: 3,
-              spaceBetween: 0,
-            },
-            567: {
-              slidesPerView: 3,
-              spaceBetween: 0,
-            },
-            372: {
-              slidesPerView: 2,
-              spaceBetween: 0,
-            }
-        } 
-    });
 
-    var swiper = new Swiper('.swiper-container-pro', {
-        slidesPerView: 4,
-        slidesPerColumn: 1,
-        spaceBetween: 20,
-        autoplay:4000,
-        preventClicks : false,
-        nextButton: '.swiper-button-next-pro',
-        prevButton: '.swiper-button-prev-pro',
-        paginationClickable: true,
-        breakpoints: {
-            1199: {
-              slidesPerView: 4,
-              spaceBetween: 16,
-            },
-            991: {
-              slidesPerView: 3,
-              spaceBetween: 12,
-            },
-            767: {
-              slidesPerView: 2,
-              spaceBetween: 18,
-            },
-            567: {
-              slidesPerView: 2,
-              spaceBetween: 12,
-            },
-            372: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            }
-        } 
-    });
 
     $(".linker ul li a").click(function(event) {
     	$(this).find('em').toggleClass('close_em');
@@ -218,28 +246,7 @@ $(document).ready(function() {
         $(this).toggleClass('close_c');
     });
 
-    //产品详情页 多图轮播 手机
-    var galleryTop = new Swiper('.gallery-top', {
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            spaceBetween: 10,
-            loop:true,
-            loopedSlides: 4, //looped slides should be the same
-            initialSlide :0,  //设定初始化时slide的索引。
-        });
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-        spaceBetween: 10,
-        slidesPerView: 3,
-        loop:true,
-        loopedSlides: 4, //looped slides should be the same
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        touchRatio: 0.2,
-        initialSlide :0,  //设定初始化时slide的索引。
-        slideToClickedSlide: true
-    });
-    galleryTop.params.control = galleryThumbs;
-    galleryThumbs.params.control = galleryTop;
+
 
     $(".about_area .about_item,.search_list ul li").each(function(index, el) {
         var itime = index/10 + 's';

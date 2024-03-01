@@ -1,16 +1,16 @@
-// 获取导航栏元素
-
-var navbar = document.getElementById("navbar");
-
-var twoBoxs = document.getElementsByClassName('two_box');
 
 // 监听页面滚动事件
 window.addEventListener("scroll", function() {
 
+    // 获取导航栏元素
+
+    var navbar = document.querySelector(".navbar");
+
+    var twoBoxs = document.getElementsByClassName('two_box');
+
     // 计算页面滚动距离
 
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-
 
     // 计算滚动距离与导航栏高度之比
 
@@ -22,7 +22,6 @@ window.addEventListener("scroll", function() {
         // 移动端样式
         if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
             let i = document.querySelector("#head_menu")
-            console.log(i.classList.contains('n-hamburger-menu-bars'))
             if(i.classList.contains('n-hamburger-menu-bars')){
                 navbar.style.removeProperty("background-color");
                 navbar.style.removeProperty("height");
@@ -56,6 +55,7 @@ window.addEventListener("scroll", function() {
                 twoBoxs[i].style.marginTop = "5px";
             }
         }
+
     }
 
 });

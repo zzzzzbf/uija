@@ -8,15 +8,30 @@ window.onscroll = function () {
 };
 
 window.onload = function () {
-	scrollFunction();
+    // 移动端样式
+    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        var mheader = document.querySelector(".mheader");
+        var nav = mheader.querySelector("nav");
+        nav.classList.toggle("navbar");
+    }else{
+        var wrap = document.querySelector(".wrap");
+        var nav = wrap.querySelector("nav");
+        nav.classList.toggle("navbar");
+    }
+    scrollFunction();
 };
 
+// 在用户刷新页面之前将页面滚动到顶部
+window.addEventListener('beforeunload', function() {
+    window.scrollTo(0, 0);
+});
+
 function scrollFunction() {
-	if (document.documentElement.scrollTop > 30) {
-		document.getElementById("navbar").classList.add("top-nav-collapse");
-	} else if ( document.documentElement.scrollTop < 30 ) {
-		document.getElementById("navbar").classList.remove("top-nav-collapse");
-	}
+    if (document.documentElement.scrollTop > 30) {
+        document.querySelector(".navbar").classList.add("top-nav-collapse");
+    } else if ( document.documentElement.scrollTop < 30 ) {
+        document.querySelector(".navbar").classList.remove("top-nav-collapse");
+    }
 }
 
 
@@ -37,33 +52,71 @@ if (checkReplace !== null) {
 		onComplete: false                                   // Function
 	});
 }
-  
 
-/* Card Slider - Swiper */
-var cardSlider = new Swiper('.card-slider', {
-	autoplay: {
-		delay: 4000,
-		disableOnInteraction: false
-	},
-	loop: true,
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev'
-	},
-	slidesPerView: 3,
-	spaceBetween: 70,
-	breakpoints: {
-		// when window is <= 767px
-		767: {
-			slidesPerView: 1
-		},
-		// when window is <= 991px
-		991: {
-			slidesPerView: 2,
-			spaceBetween: 40
-		}
-	}
-});
+
+//banner
+let swiperBanner =  document.querySelector(".swiper");
+
+if(swiperBanner!=null){
+    var swiper = new Swiper('.swiper-container-pro', {
+        slidesPerView: 4,
+        slidesPerColumn: 1,
+        spaceBetween: 20,
+        autoplay:4000,
+        preventClicks : false,
+        nextButton: '.swiper-button-next-pro',
+        prevButton: '.swiper-button-prev-pro',
+        paginationClickable: true,
+        breakpoints: {
+            1199: {
+                slidesPerView: 4,
+                spaceBetween: 16,
+            },
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 12,
+            },
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 18,
+            },
+            567: {
+                slidesPerView: 2,
+                spaceBetween: 12,
+            },
+            372: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            }
+        }
+    });
+
+    /* Card Slider - Swiper */
+    var cardSlider = new Swiper('.card-slider', {
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false
+        },
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        slidesPerView: 3,
+        spaceBetween: 70,
+        breakpoints: {
+            // when window is <= 767px
+            767: {
+                slidesPerView: 1
+            },
+            // when window is <= 991px
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 40
+            }
+        }
+    });
+}
 
 // Navbar on mobile
 let elements = document.querySelectorAll(".nav-link:not(.dropdown-toggle)");
@@ -85,10 +138,10 @@ if(selectors !== null){
             i.classList.toggle("n-hamburger-menu-bars");
         }
 
-        document.querySelector("#navbar").classList.toggle('main-navigation');
+        document.querySelector(".navbar").classList.toggle('main-navigation');
 
 
-        var navbar = document.getElementById("navbar");
+        var navbar = document.querySelector(".navbar");
         if(!navbar.classList.contains('top-nav-collapse')){
             navbar.style.removeProperty("background-color");
             navbar.style.removeProperty("height");

@@ -15,8 +15,8 @@ html {
 
 /* 设置导航栏样式 */
 
-#navbar {
-
+/* Navigation */
+.navbar {
     position: fixed;
 
     top: 0;
@@ -33,12 +33,6 @@ html {
 
     /*background-color: #00000070;*/
 
-    transition: background-color 0.3s;
-
-}
-
-/* Navigation */
-.navbar {
     padding-top: 1.75rem;
     background-color: transparent;
     box-shadow: none;
