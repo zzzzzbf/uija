@@ -341,7 +341,7 @@ transform:translate3d(0, 0, 0);
 .totop.on{filter:alpha(opacity=90);opacity: 0.9;}
 .totop.on:hover{filter:alpha(opacity=100);opacity: 1;}
 
-.main{width: 100%;height: auto;overflow: hidden;margin-bottom: 80px;}
+.main{width: 100%;height: auto;overflow: hidden;}
 .left{position: relative;z-index: 3;}
 .left_top{width: 100%;height: 100px;line-height: 100px;padding: 0 20px;color: #fff;font-size: 30px;overflow: hidden;background: url(../images/left_top.jpg) center center no-repeat;background-size: cover;margin-bottom: 10px;}
 .left_ad{width: 100%;height: auto;font-size: 0px;overflow: hidden;}
