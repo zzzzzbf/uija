@@ -1,6 +1,6 @@
 ﻿/* eyoucms.com 易优CMS -- 好用,免费,安全 */
-body{font-family:'Source Han Serif' !important;font:14px Source Han Serif!important;line-height: 24px;}
-body,div,p,span,ul,li,dl,dd,h1,h2,h3,a,input,img{margin:0;padding:0;font-family:'Source Han Serif'!important;}
+body{font-family:"微软雅黑"!important;font:14px Microsoft YaHei!important;line-height: 24px;}
+body,div,p,span,ul,li,dl,dd,h1,h2,h3,a,input,img{margin:0;padding:0;font-family:"微软雅黑"!important;}
 li,ol{list-style:none;}
 a,input,img,textarea{border:none;outline:none;}
 i,em{font-style:normal;}
@@ -155,7 +155,8 @@ transform:translate3d(0, 0, 0);
 .mlogo i{width: 100%;height: 70px;display: table-cell;vertical-align: middle;}
 /*.mlogo i img{max-width: 100%;max-height: 100%;}*/
 .mlogo i img{max-width: 70%; max-height: 70%;display: block;margin: 0 auto;}
-.nav_button{width: 30px;height: 100%;background: url(../images/head_menu.png) center center no-repeat;background-size: 26px;position: absolute;left: 4%;top: 0px;}
+/* .nav_button{width: 30px;height: 100%;background: url(../images/head_menu.png) center center no-repeat;background-size: 26px;position: absolute;left: 4%;top: 0px;} */
+.nav_button{width: 5%;height: 100%;background: url(../images/head_menu.png) center center no-repeat;position: absolute;left: 5%;top: 10%;}
 .msearch{width: 30px;height: 100%;position: absolute;top: 0;right: 12%;background: url(../images/mc_sear.png) center center no-repeat;background-size: 24px;}
 .msearch_box{width: 100%;height: auto;padding: 15px 20px;overflow: hidden;position: absolute;right: 0;background: #f25c05;display: none;}
 .msearch_box form{width: 100%;height: 30px;overflow: hidden;background: #fff;position: relative;padding-right: 60px;}
