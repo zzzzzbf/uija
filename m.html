@@ -14,6 +14,8 @@
 		<link rel="stylesheet" type="text/css" href="static/css/animate.css" />
 		<link rel="stylesheet" type="text/css" href="static/css/master.css" />
 		<link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/picScroll.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/picFocus.css" />
 		<link rel="stylesheet" href="static/css/scrollCue.css" type="text/css" media="all">
 		<script type="text/javascript">
 			if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
@@ -24,6 +26,21 @@
 		</script>
 
 	</head>
+
+	<script type="text/javascript" src="static/js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="static/js/swiper-3.3.1.jquery.min.js"></script>
+	<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="static/js/scrollCue.min.js"></script>
+	<script type="text/javascript" src="static/js/wow.min.js"></script>
+	<script type="text/javascript" src="static/js/funtion.js"></script>
+	<script type="text/javascript" src="static/js/scripts.js"></script>
+	<script type="text/javascript" src="static/js/main.js"></script>
+
+	<script type="text/javascript" src="static/js/ossImage.js"></script>
+	<script type="text/javascript" src="static/js/TouchSlide.1.1.js"></script>
+	<script type="text/javascript" src="static/js/jquery.superslide.2.1.1.js"></script>
+
+
 	<body>
 		<!-- <div class="wrapper">
 			<div class="class page-prev visible-xs visible-sm">
@@ -161,150 +178,180 @@
 					</ul>
 				</div> <!-- end of navbar-collapse -->
 			</nav>
+		</div>
 
 
 
 
-			<div class="banner ibanner">
-				<div class="swiper-container swiper-container-banner">
-					<!--        <ul class="swiper-wrapper swiper-wrapper-banner">-->
-					<!--            <li class="swiper-slide swiper-slide-banner">-->
-					<!--                <a href="#" target="_blank">-->
-					<!--                    <img src="static/picture/ma.jpg" style="width: 100%; height: 100%;" alt="幻二"/>-->
-					<!--                </a>-->
-					<!--            </li>-->
-					<!--            <li class="swiper-slide swiper-slide-banner">-->
-					<!--                <a href="#" target="_blank">-->
-					<!--                    <img src="static/picture/mb.jpg" style="width: 100%; height: 100%;" alt="幻三"/>-->
-					<!--                </a>-->
-					<!--            </li>-->
-					<!--        </ul>-->
+		<div class="banner ibanner">
+			<div class="swiper-container swiper-container-banner">
+				<!--        <ul class="swiper-wrapper swiper-wrapper-banner">-->
+				<!--            <li class="swiper-slide swiper-slide-banner">-->
+				<!--                <a href="#" target="_blank">-->
+				<!--                    <img src="static/picture/ma.jpg" style="width: 100%; height: 100%;" alt="幻二"/>-->
+				<!--                </a>-->
+				<!--            </li>-->
+				<!--            <li class="swiper-slide swiper-slide-banner">-->
+				<!--                <a href="#" target="_blank">-->
+				<!--                    <img src="static/picture/mb.jpg" style="width: 100%; height: 100%;" alt="幻三"/>-->
+				<!--                </a>-->
+				<!--            </li>-->
+				<!--        </ul>-->
 
-					<!--        <div class="swiper-button-prev swiper-button-prev-banner fadeInLeft wow"></div>-->
-					<!--        <div class="swiper-button-next swiper-button-next-banner fadeInRight wow"></div>-->
-					<ul class="swiper-wrapper swiper-wrapper-banner">
-						<li class="swiper-slide swiper-slide-banner"><img src="static/picture/ma.jpg"
-								style="width: 100%; height: 100%;" alt=" 幻一">
-						</li>
-						<li class="swiper-slide swiper-slide-banner"><img src="static/picture/mb.jpg"
-								style="width: 100%; height: 100%;" alt=" 幻二">
-						</li>
+				<!--        <div class="swiper-button-prev swiper-button-prev-banner fadeInLeft wow"></div>-->
+				<!--        <div class="swiper-button-next swiper-button-next-banner fadeInRight wow"></div>-->
+				<ul class="swiper-wrapper swiper-wrapper-banner">
+					<li class="swiper-slide swiper-slide-banner"><img id="oss_img_ry" style="width: 100%; height: 100%;"
+							alt=" 幻一">
+					</li>
+					<li class="swiper-slide swiper-slide-banner"><img id="oss_img_xc" style="width: 100%; height: 100%;"
+							alt=" 幻二">
+					</li>
+					<li class="swiper-slide swiper-slide-banner"><img id="oss_img_zm" style="width: 100%; height: 100%;"
+							alt=" 幻二">
+					</li>
+				</ul>
+				<div class="swiper-button-prev swiper-button-prev-banner fadeInLeft wow"></div>
+				<div class="swiper-button-next swiper-button-next-banner fadeInRight wow"></div>
+			</div>
+		</div>
+
+
+		<div id="focus" class="picFocus">
+			<div class="card">
+				<img id="ts" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts.jpg" />
+			</div>
+			<div class="hd">
+				<ul></ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li><a href="#"><img id="oss_img_ts_ry" _src="" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts_ry.jpg" /></a></li>
+					<li><a href="#"><img id="oss_img_ts_xc" _src="" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts_xc.jpg" /></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<img id="xty" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/xty.jpg" style="width: 100%; height: 100%;" />
+		
+		<!--这里是为了在这个DIV完毕后立即执行JS，避免整个页面加载完毕才执行。-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				const pathPrefix = "/home/"
+				// 使用函数获取图片URL
+				const tsRyImageUrl = getOSSImageUrl(pathPrefix + 'ts_ry', 'jpg');
+				const tsXcImageUrl = getOSSImageUrl(pathPrefix + 'ts_xc', 'jpg');
+				$("#oss_img_ts_ry").attr('_src', tsRyImageUrl)
+				$("#oss_img_ts_xc").attr('_src', tsXcImageUrl)
+			});
+			
+			TouchSlide({
+				slideCell: "#focus",
+				titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+				mainCell: ".bd ul",
+				effect: "left",
+				autoPlay: false, //自动播放
+				autoPage: true, //自动分页
+				switchLoad: "_src" //切换加载，真实图片路径为"_src" 
+			});
+		</script>
+
+
+
+		<div class="row call-bg align-items-center" style="margin-top: 30px;">
+			<div class="col-lg-12">
+				<div class="call-action-content" data-cue="zoomIn" data-show="true"
+					style="animation-name: zoomIn; animation-duration: 2500ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+					<div class="call-action-title">
+						<h2>6项权威专利</h2>
+						<h2>3项国际大奖<h2>
+						<h2>硬实力创领行业标杆</h2>
+					</div>
+				</div>
+
+				<div class="picScroll">
+					<ul>
+						<li><a href="#/"><img id="oss_img_scroll_1" _src="" src="static/images/loading.gif" /></a></li>
+						<li><a href="#/"><img id="oss_img_scroll_2" _src="" src="static/images/loading.gif" /></a></li>
+						<li><a href="#/"><img id="oss_img_scroll_3" _src="" src="static/images/loading.gif" /></a></li>
+						<!-- <li><a href="#/"><img id="oss_img_scroll_4" _src="" src="static/images/loading.gif" /></a></li> -->
 					</ul>
-					<div class="swiper-button-prev swiper-button-prev-banner fadeInLeft wow"></div>
-					<div class="swiper-button-next swiper-button-next-banner fadeInRight wow"></div>
+
+					<a class="prev" href="javascript:void(0)"></a>
+					<a class="next" href="javascript:void(0)"></a>
 				</div>
 			</div>
-
-
-			<!--<div>-->
-			<!--    <li class="swiper-slide swiper-slide-banner"><img src="static/picture/m1.jpg" style="width: 100%; height: 100%;>-->
-			<!--                     -->
-			<!--                    </li>-->
-			<!--    -->
-			<!--                    -->
-			<!--                     <li class=" swiper-slide swiper-slide-banner"><img src="static/picture/m2.jpg" style="width: 100%; height: 100%;>-->
-			<!--                     -->
-			<!--                    </li>-->
-			<!--                                        <li class=" swiper-slide swiper-slide-banner"><img src="static/picture/m3.jpg"-->
-			<!--                                                                                           style="width: 100%; height: 100%;>-->
-			<!--                     -->
-			<!--                    </li>-->
-			<!--                     <li class=" swiper-slide swiper-slide-banner"><img src="static/picture/m5.jpg" style="width: 100%; height: 100%;>-->
-			<!--                     -->
-			<!--                    </li>-->
-			<!--                    -->
-			<!--                   -->
-			<!--                     </div>-->
-			<!--        <div class=" video">-->
-			<!--        <div class="container">-->
-			<!--            <div class="video_box">-->
-			<!--                <iframe height="100%" width="100%" src='static/picture/有加.mp4' autoplay="autoplay" frameborder=0-->
-			<!--                'allowfullscreen'></iframe>-->
-			<!--            </div>-->
-			<!--        </div>-->
-			<!--</div>-->
-
-			<div>
-				<li class="swiper-slide swiper-slide-banner"><img src="static/picture/m6.jpg" style="width: 100%; height: 100%;>
-                     
-                    </li></div>
-    <div class=" footer">
-
-					<div class="copyright">
-						<div class="container">
-							<p>Copyright © 2023&nbsp; </p>
-							<p>美好有加智能科技有限公司&nbsp; 版权所有 &nbsp;</p>
-							<p><a href="https://beian.miit.gov.cn/" rel="nofollow"
-									target="_blank">苏ICP备2023047043号-2</a>
-							</p>
-							<div style="width:260px;margin:0 auto; padding:5px 0;">
-								<a target="_blank"
-									href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41031102000545"
-									style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img
-										src="static/picture/ga.png" style="float:left;" />
-									<p
-										style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
-										苏公网安备32059002004686号</p>
-								</a>
-							</div>
-						</div>
-					</div>
-			</div>
-
-			<!-- 应用插件标签 start -->
-
-			<!-- 应用插件标签 end -->
 		</div>
+		
+		<!--这里是为了在这个DIV完毕后立即执行JS，避免整个页面加载完毕才执行。-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				const pathPrefix = "/home/"
+				// 使用函数获取图片URL
+				const scrollImageUrl_1 = getOSSImageUrl(pathPrefix + 'scroll_1', 'jpg');
+				const scrollImageUrl_2 = getOSSImageUrl(pathPrefix + 'scroll_2', 'jpg');
+				const scrollImageUrl_3 = getOSSImageUrl(pathPrefix + 'scroll_3', 'jpg');
+				// const scrollImageUrl_4 = getOSSImageUrl(pathPrefix + 'scroll_4', 'jpg');
+				// https://uija.oss-cn-nanjing.aliyuncs.com/home/scroll_4.jpg
+				// console.log(scrollImageUrl_4)
+				$("#oss_img_scroll_1").attr('_src', scrollImageUrl_1)
+				$("#oss_img_scroll_2").attr('_src', scrollImageUrl_2)
+				$("#oss_img_scroll_3").attr('_src', scrollImageUrl_3)
+				// $("#oss_img_scroll_4").attr('_src', scrollImageUrl_4)
+			});
+			
+			jQuery(".picScroll").slide({
+				mainCell: "ul",
+				effect: "leftMarquee",
+				autoPlay: true,
+				vis: 3,	// 可视个数
+				autoPlay: true,
+				interTime: 50,	// 运行速度
+				switchLoad: "_src"	// 切换加载，真实图片路径为"_src"
+			});
+		</script>
+		
+		<img id="ys" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ys.jpg" style="width: 100%; height: 100%;" />
+		<img id="lj" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/lj.jpg" style="width: 100%; height: 100%;" />
+		<!-- <img src="static/picture/m6.jpg" style="width: 100%; height: 100%;" /> -->
+
+		<div class=" footer">
+			<div class="copyright">
+				<div class="container">
+					<p>Copyright © 2023&nbsp; </p>
+					<p>美好有加智能科技有限公司&nbsp; 版权所有 &nbsp;</p>
+					<p><a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">苏ICP备2023047043号-2</a>
+					</p>
+					<div style="width:260px;margin:0 auto; padding:5px 0;">
+						<a target="_blank"
+							href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41031102000545"
+							style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img
+								src="static/picture/ga.png" style="float:left;" />
+							<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+								苏公网安备32059002004686号</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 应用插件标签 start -->
+
+		<!-- 应用插件标签 end -->
 		<div class="opacity"></div>
 		<div class="totop"></div>
 
-		<script type="text/javascript" src="static/js/jquery-1.11.3.js"></script>
-		<script type="text/javascript" src="static/js/swiper-3.3.1.jquery.min.js"></script>
-		<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="static/js/jquery.superslide.2.1.1.js"></script>
-		<script type="text/javascript" src="static/js/jquery.superslide.2.1.1.source.js"></script>
-		<script type="text/javascript" src="static/js/scrollCue.min.js"></script>
-		<script type="text/javascript" src="static/js/wow.min.js"></script>
-		<script type="text/javascript" src="static/js/funtion.js"></script>
-		<script type="text/javascript" src="static/js/scripts.js"></script>
-		<script type="text/javascript" src="static/js/main.js"></script>
 
-		<script>
-			// Mobile Menu
-			// jQuery('brindor_menu ul').meanmenu();
-			// $('.mobile-menu nav').meanmenu({
-			//     meanScreenWidth: "991",
-			//     meanMenuContainer: ".mobile-menu",
-			//     meanMenuOpen: "<span></span> <span></span> <span></span>",
-			//     onePage: false,
-			// });
-
-			// hide sub nav
-			// if(meanShowChildren) {
-			//     // allow expandable sub nav(s)
-			//     if(meanExpandableChildren){
-			//         jQuery('.mean-nav ul ul').each(function() {
-			//             if(jQuery(this).children().length){
-			//                 jQuery(this,'li:first').parent().append('<a class="mean-expand" href="#" style="font-size: '+ meanMenuCloseSize +'">'+ meanExpand +'</a>');
-			//             }
-			//         });
-			//         jQuery('.mean-expand').on("click",function(e){
-			//             e.preventDefault();
-			//             if (jQuery(this).hasClass("mean-clicked")) {
-			//                 jQuery(this).text(meanExpand);
-			//                 jQuery(this).prev('ul').slideUp(300, function(){});
-			//             } else {
-			//                 jQuery(this).text(meanContract);
-			//                 jQuery(this).prev('ul').slideDown(300, function(){});
-			//             }
-			//             jQuery(this).toggleClass("mean-clicked");
-			//         });
-			//     } else {
-			//         jQuery('.mean-nav ul ul').show();
-			//     }
-			// } else {
-			//     jQuery('.mean-nav ul ul').hide();
-			// }
+		<script type="text/javascript">
+			$(document).ready(function() {
+				const pathPrefix = "/home/"
+				// 使用函数获取图片URL
+				const ryImageUrl = getOSSImageUrl(pathPrefix + 'ry', 'jpg');
+				const xcImageUrl = getOSSImageUrl(pathPrefix + 'xc', 'jpg');
+				const zmImageUrl = getOSSImageUrl(pathPrefix + 'zm', 'jpg');
+				$("#oss_img_ry").attr('src', ryImageUrl)
+				$("#oss_img_xc").attr('src', xcImageUrl)
+				$("#oss_img_zm").attr('src', zmImageUrl)
+			});
 		</script>
 	</body>
 </html>

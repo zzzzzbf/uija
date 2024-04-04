@@ -1,0 +1,56 @@
+.picScroll {
+	margin: 10px auto;
+	position: relative;
+	/* border: 1px solid #eee; */
+	width: 732px;
+	padding: 10px 0 10px 30px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.picScroll .prev,
+.picScroll .next {
+	display: block;
+	position: absolute;
+	top: 86px;
+	left: 5px;
+	width: 23px;
+	height: 23px;
+	background: url(images/btns.png) no-repeat;
+}
+
+.picScroll .next {
+	left: auto;
+	right: 5px;
+	background-position: -25px 0;
+}
+
+.picScroll .prev:hover {
+	background-position: 0 -30px;
+}
+
+.picScroll .next:hover {
+	background-position: -25px -30px;
+}
+
+.picScroll ul {
+	overflow: hidden;
+	zoom: 1;
+}
+
+.picScroll ul li {
+	/* width: 120px; */
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	padding: 0 10px;
+}
+
+.picScroll ul li img {
+	/* width: 120px;
+	height: 170px; */
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: url(../images/loading.gif) center center no-repeat;
+}

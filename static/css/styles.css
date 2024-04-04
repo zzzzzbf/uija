@@ -167,13 +167,20 @@ html {
 }
 
 .call-action-content {
-	margin-top: 3.4rem;
+	margin: 3.4rem 0;
 	text-align: center;
 }
 
 .call-action-title h1 {
 	font-size: 46px;
 	font-weight: 400;
+	text-align: center;
+}
+
+/* 移动端样式 */
+.call-action-title h2 {
+	font-size: 24px;
+	margin-bottom: 2rem;
 	text-align: center;
 }
 
