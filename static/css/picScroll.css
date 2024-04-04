@@ -16,7 +16,7 @@
 	left: 5px;
 	width: 23px;
 	height: 23px;
-	background: url(images/btns.png) no-repeat;
+	/* background: url(images/btns.png) no-repeat; */
 }
 
 .picScroll .next {

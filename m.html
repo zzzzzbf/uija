@@ -33,12 +33,12 @@
 	<script type="text/javascript" src="static/js/scrollCue.min.js"></script>
 	<script type="text/javascript" src="static/js/wow.min.js"></script>
 	<script type="text/javascript" src="static/js/funtion.js"></script>
-	<script type="text/javascript" src="static/js/scripts.js"></script>
 	<script type="text/javascript" src="static/js/main.js"></script>
-
+	
 	<script type="text/javascript" src="static/js/ossImage.js"></script>
 	<script type="text/javascript" src="static/js/TouchSlide.1.1.js"></script>
 	<script type="text/javascript" src="static/js/jquery.superslide.2.1.1.js"></script>
+
 
 
 	<body>
@@ -226,14 +226,16 @@
 			</div>
 			<div class="bd">
 				<ul>
-					<li><a href="#"><img id="oss_img_ts_ry" _src="" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts_ry.jpg" /></a></li>
-					<li><a href="#"><img id="oss_img_ts_xc" _src="" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts_xc.jpg" /></a></li>
+					<li><a href="#"><img id="oss_img_ts_ry" _src=""
+								src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts_ry.jpg" /></a></li>
+					<li><a href="#"><img id="oss_img_ts_xc" _src=""
+								src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts_xc.jpg" /></a></li>
 				</ul>
 			</div>
 		</div>
-		
+
 		<img id="xty" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/xty.jpg" style="width: 100%; height: 100%;" />
-		
+
 		<!--这里是为了在这个DIV完毕后立即执行JS，避免整个页面加载完毕才执行。-->
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -244,7 +246,7 @@
 				$("#oss_img_ts_ry").attr('_src', tsRyImageUrl)
 				$("#oss_img_ts_xc").attr('_src', tsXcImageUrl)
 			});
-			
+
 			TouchSlide({
 				slideCell: "#focus",
 				titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
@@ -265,7 +267,7 @@
 					<div class="call-action-title">
 						<h2>6项权威专利</h2>
 						<h2>3项国际大奖<h2>
-						<h2>硬实力创领行业标杆</h2>
+								<h2>硬实力创领行业标杆</h2>
 					</div>
 				</div>
 
@@ -282,7 +284,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!--这里是为了在这个DIV完毕后立即执行JS，避免整个页面加载完毕才执行。-->
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -299,18 +301,18 @@
 				$("#oss_img_scroll_3").attr('_src', scrollImageUrl_3)
 				// $("#oss_img_scroll_4").attr('_src', scrollImageUrl_4)
 			});
-			
+
 			jQuery(".picScroll").slide({
 				mainCell: "ul",
 				effect: "leftMarquee",
 				autoPlay: true,
-				vis: 3,	// 可视个数
+				vis: 3, // 可视个数
 				autoPlay: true,
-				interTime: 50,	// 运行速度
-				switchLoad: "_src"	// 切换加载，真实图片路径为"_src"
+				interTime: 50, // 运行速度
+				switchLoad: "_src" // 切换加载，真实图片路径为"_src"
 			});
 		</script>
-		
+
 		<img id="ys" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ys.jpg" style="width: 100%; height: 100%;" />
 		<img id="lj" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/lj.jpg" style="width: 100%; height: 100%;" />
 		<!-- <img src="static/picture/m6.jpg" style="width: 100%; height: 100%;" /> -->
@@ -341,6 +343,8 @@
 		<div class="totop"></div>
 
 
+		<script type="text/javascript" src="static/js/scripts.js"></script>
+		
 		<script type="text/javascript">
 			$(document).ready(function() {
 				const pathPrefix = "/home/"
