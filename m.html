@@ -120,16 +120,19 @@
 			<!--        </form>-->
 			<!--    </div>-->
 			<!--    <div class="nav_button"></div>-->
-
 			<nav id="navbar" class="navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
 				<!-- Image Logo -->
-				<a class="navbar-brand logo-image" href="m.html">
-					<img src="static/picture/uija.png" class="mlogo" alt="alternative">
-				</a>
-				<div class="navbar-toggler p-0 border-0 nav_button" type="button" id="head_menu"
-					aria-label="Toggle navigation">
+				<div class="mlogo">
+					<a href="m.html">
+						<img src="static/picture/uija.png" alt="alternative">
+					</a>
 				</div>
-				<!-- <div class="mlogo"><a href="m.html"><i><img src="static/picture/uija.png"></i></a></div> -->
+				<!-- <div class="msearch"></div> -->
+				<div class="navbar-toggler nav_button" type="button" id="head_menu" aria-label="Toggle navigation">
+					<!-- <span class="head_menu"></span>
+					<span class="head_menu"></span>
+					<span class="head_menu"></span> -->
+				</div>
 				<div class="m_list navbar-collapse offcanvas-collapse mobile-menu" id="navbarsExampleDefault">
 					<ul class="m_one navbar-nav ms-auto navbar-nav-scroll">
 						<li class="nav-item dropdown">
@@ -155,7 +158,7 @@
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown"
 								aria-expanded="false">系列产品</a>
 							<ul class="dropdown-menu" aria-labelledby="dropdown02">
-								<li><a class="dropdown-item" href="#">容与</a></li>
+								<li><a class="dropdown-item" href="xlcp/rongyu.html">容与</a></li>
 								<li>
 									<div class="dropdown-divider"></div>
 								</li>
@@ -219,17 +222,20 @@
 
 		<div id="focus" class="picFocus">
 			<div class="card">
-				<img id="ts" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts.jpg" style="width: 100%; height: 100%;"/>
+				<img id="ts" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts.jpg"
+					style="width: 100%; height: 100%;" />
 			</div>
 			<div class="hd">
 				<ul></ul>
 			</div>
 			<div class="bd">
-				<ul>
+				<ul style="max-height: 70%;">
 					<li><a href="#"><img id="oss_img_ts_ry" _src=""
-								src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts_ry.jpg" style="max-width: 100%; max-height: 45%;"/></a></li>
+								src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts_ry.jpg"
+								style="width: 100%; height: 100%;" /></a></li>
 					<li><a href="#"><img id="oss_img_ts_xc" _src=""
-								src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts_xc.jpg" style="max-width: 100%; max-height: 45%;"/></a></li>
+								src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts_xc.jpg"
+								style="width: 100%; height: 100%;" /></a></li>
 				</ul>
 			</div>
 		</div>
@@ -329,6 +335,7 @@
 				vis: 4, // 可视个数
 				autoPlay: true,
 				interTime: 20, // 运行速度
+				mouseOverStop: false, // 鼠标移到容器层 是否停止播放
 				switchLoad: "_src" // 切换加载，真实图片路径为"_src"
 			});
 		</script>

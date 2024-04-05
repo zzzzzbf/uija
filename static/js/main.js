@@ -66,6 +66,10 @@ $(function(){
 	        if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
 	            let i = document.querySelector("#navbar")
 	            if(i.classList.contains('navbar')){
+					// 打开菜单情况下不移除遮荫
+					if (document.querySelector(".n-header-crossing-icon")) {
+						return ;
+					}
 	                navbar.style.removeProperty("background-color");
 	                navbar.style.removeProperty("height");
 	            }else{

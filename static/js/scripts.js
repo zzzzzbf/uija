@@ -45,21 +45,29 @@ for (let i = 0; i < elements.length; i++) {
 let selectors = document.querySelector(".navbar-toggler");
 if (selectors !== null) {
 	selectors.addEventListener("click", () => {
-		document.querySelector(".offcanvas-collapse").classList.toggle("open");
+		
 		// 切换头部菜单按钮图标
 		let i = document.querySelector("#head_menu")
 		if (i !== null) {
 			i.classList.toggle("nav_button");
 			i.classList.toggle("n-header-crossing-icon");
 		}
-
-		document.querySelector(".navbar").classList.toggle('main-navigation');
-
-
+		document.querySelector(".offcanvas-collapse").classList.toggle("open");
+			
+		// // 获取所有子元素
+		// const children = document.querySelectorAll('#head_menu span');
+		// // 遍历所有子元素，切换"class1"和"class2"
+		// children.forEach(child => {
+		//   // child.classList.toggle('class1', true);
+		//   child.classList.toggle('head_menu');
+		// });
+		
 		var navbar = document.querySelector(".navbar");
-		if (!navbar.classList.contains('top-nav-collapse')) {
+		if (navbar.classList.contains('top-nav-collapse')) {
 			navbar.style.removeProperty("background-color");
 			navbar.style.removeProperty("height");
+		}else{
+			navbar.style.background = "rgba(0,0,0,.7)";
 		}
 	});
 }
