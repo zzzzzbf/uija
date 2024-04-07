@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -17,6 +17,17 @@
 		<link rel="stylesheet" type="text/css" href="static/css/picScroll.css" />
 		<link rel="stylesheet" type="text/css" href="static/css/picFocus.css" />
 		<link rel="stylesheet" href="static/css/scrollCue.css" type="text/css" media="all">
+
+		<script type="text/javascript" src="static/js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="static/js/swiper-3.3.1.jquery.min.js"></script>
+		<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="static/js/scrollCue.min.js"></script>
+		<script type="text/javascript" src="static/js/wow.min.js"></script>
+		<script type="text/javascript" src="static/js/funtion.js"></script>
+
+		<script type="text/javascript" src="static/js/ossImage.js"></script>
+		<script type="text/javascript" src="static/js/TouchSlide.1.1.js"></script>
+		<script type="text/javascript" src="static/js/jquery.superslide.2.1.1.js"></script>
 		<script type="text/javascript">
 			if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
 				window.location.href = "#";
@@ -24,375 +35,362 @@
 				window.location.href = "index.html";
 			}
 		</script>
-
 	</head>
-
-	<script type="text/javascript" src="static/js/jquery-1.11.3.js"></script>
-	<script type="text/javascript" src="static/js/swiper-3.3.1.jquery.min.js"></script>
-	<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="static/js/scrollCue.min.js"></script>
-	<script type="text/javascript" src="static/js/wow.min.js"></script>
-	<script type="text/javascript" src="static/js/funtion.js"></script>
-	<script type="text/javascript" src="static/js/main.js"></script>
-
-	<script type="text/javascript" src="static/js/ossImage.js"></script>
-	<script type="text/javascript" src="static/js/TouchSlide.1.1.js"></script>
-	<script type="text/javascript" src="static/js/jquery.superslide.2.1.1.js"></script>
 
 
 
 	<body>
-		<!-- <div class="wrapper">
-			<div class="class page-prev visible-xs visible-sm">
-				<div class="m_list">
-					<ul class="m_one">
-						<li><a href="#">首页</a></li>
-						<li><a href="javascript:;"> 美好有加 </a>
-							<ul class="m_two">
-								<div class="class_back">美好有加</div>
-								<li><a href="mhyj/pqjs.html">品牌介绍 </a></li>
-								<li><a href="mhyj/pqln.html">品牌理念 </a></li>
-								<li><a href="mhyj/ppfz.html">品牌历程</a></li>
-
-								<li><a href="mhyj/ryzz.html">荣誉资质</a></li>
-
-							</ul>
-						</li>
-						<li><a href="ppgs.html"> 产品故事 </a>
-
-
-						</li>
-
-						<li><a href="yjsj.html">资讯中心</a></li>
-						<li><a href="lxwm.html"> 联系我们</a></li>
-
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div> -->
-		<!--<div class="header">
-      <div class="container">
-        <div class="logo"><a href="index.html"><i><img src="static/picture/111.png" alt="有加"></i></a></div>
-        <div class="nav">
-          <ul class="one">
-            <li class="on"><a href="index.html">首页</a></li>
-                    <li class=""> <a href="guanyuwomen/index.html">关于有加 </a>           <div class="two_box">
-                <ul class="two fl">
-                                <li><a href="guanyuwomen/index.html">品牌介绍</a></li>
-                                <li><a href="guanyuwomen/qiyewenhua/index.html">企业文化</a></li>
-                                <li><a href="guanyuwomen/fazhanlicheng/index.html">发展历程</a></li>
-                              </ul>
-              </div>
-               </li>
-                    <li class=""> <a href="chanpinzhongxin/index.html">产品中心 </a>           <div class="two_box">
-                <ul class="two fl">
-                                <li><a href="chanpinzhongxin/chunshuiji/index.html">净水器 </a></li>
-                                <li><a href="chanpinzhongxin/guanxianji/index.html">管线机 </a></li>
-                                <li><a href="chanpinzhongxin/guolvqi/index.html">前置过滤器 </a></li>
-                                <li><a href="chanpinzhongxin/muyubao/index.html">沐浴宝</a></li>
-                                <li><a href="chanpinzhongxin/ruanshuiji/index.html">中央饮水机</a></li>
-                              </ul>
-              </div>
-               </li>
-                    <li class=""> <a href="anlizhanshi/index.html">美好有加 </a>  </li>
-                    <li class=""> <a href="xinwenzixun/index.html">新闻资讯 </a>  </li>
-
-     <li class=""> <a href="lianxiwomen/index.html">联系我们</a>  </li>
-
-                           </div>
-               </li>
-
-
-        </div>-->
-
-		<div class="mheader">
-			<!--    <div class="mlogo"><a href="#"><i><img src="static/picture/222.png" ></i></a></div>-->
-			<!--    <div class="msearch"></div>-->
-			<!--    <div class="msearch_box">-->
-			<!--        <form method="get" action="index.php?m=home&c=Search&a=lists&lang=cn">-->
-			<!--            <input type="hidden" name="m" value="home"/><input type="hidden" name="c" value="Search"/><input-->
-			<!--                type="hidden" name="a" value="lists"/><input type="hidden" name="lang" value="cn"/> <input type="type"-->
-			<!--                                                                                                           class="msearch_input"-->
-			<!--                                                                                                           name="k"-->
-			<!--                                                                                                           id="keywords">-->
-			<!--            <input type="submit" value="搜索" class="msearch_btn">-->
-			<!--        </form>-->
-			<!--    </div>-->
-			<!--    <div class="nav_button"></div>-->
-			<nav id="navbar" class="navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
-				<!-- Image Logo -->
-				<div class="mlogo">
-					<a href="m.html">
-						<img src="static/picture/uija.png" alt="alternative">
-					</a>
-				</div>
-				<!-- <div class="msearch"></div> -->
-				<div class="navbar-toggler nav_button" type="button" id="head_menu" aria-label="Toggle navigation">
-					<!-- <span class="head_menu"></span>
-					<span class="head_menu"></span>
-					<span class="head_menu"></span> -->
-				</div>
-				<div class="m_list navbar-collapse offcanvas-collapse mobile-menu" id="navbarsExampleDefault">
-					<ul class="m_one navbar-nav ms-auto navbar-nav-scroll">
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown·"
-								aria-expanded="false">美好有加</a>
-							<ul class="dropdown-menu" aria-labelledby="dropdown01">
-								<li><a class="dropdown-item" href="mhyj/ppjs.html">品牌介绍</a></li>
-								<li>
-									<div class="dropdown-divider"></div>
+		<div class="wrapper">
+			<div class="visible-xs visible-sm">
+				<div class="mheader">
+					<nav id="navbar" class="navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+						<!-- Image Logo -->
+						<div class="mlogo">
+							<a href="m.html">
+								<img src="static/picture/uija.png" alt="uija">
+							</a>
+						</div>
+						<div class="navbar-toggler nav_button" type="button" id="head_menu"
+							aria-label="Toggle navigation">
+						</div>
+						<div class="m_list navbar-collapse offcanvas-collapse mobile-menu" id="navbarsExampleDefault">
+							<ul class="m_one navbar-nav ms-auto navbar-nav-scroll">
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="dropdown01"
+										data-bs-toggle="dropdown·" aria-expanded="false">美好有加</a>
+									<ul class="dropdown-menu" aria-labelledby="dropdown01">
+										<li><a class="dropdown-item" href="mhyj/ppjs.html">品牌介绍</a></li>
+										<li>
+											<div class="dropdown-divider"></div>
+										</li>
+										<li><a class="dropdown-item" href="mhyj/pqln.html">品牌理念</a></li>
+										<li>
+											<div class="dropdown-divider"></div>
+										</li>
+										<li><a class="dropdown-item" href="mhyj/ppfz.html">品牌历程</a></li>
+										<li>
+											<div class="dropdown-divider"></div>
+										</li>
+										<li><a class="dropdown-item" href="mhyj/ryzz.html">荣誉资质</a></li>
+									</ul>
 								</li>
-								<li><a class="dropdown-item" href="mhyj/pqln.html">品牌理念</a></li>
-								<li>
-									<div class="dropdown-divider"></div>
+								<li class="nav-item">
+									<a class="nav-link dropdown-toggle" href="#" id="dropdown02"
+										data-bs-toggle="dropdown" aria-expanded="false">系列产品</a>
+									<ul class="dropdown-menu" aria-labelledby="dropdown02">
+										<li><a class="dropdown-item" href="/xlcp/rongyu.html">容与</a></li>
+										<li>
+											<div class="dropdown-divider"></div>
+										</li>
+										<li><a class="dropdown-item" href="#">昕辰</a></li>
+									</ul>
 								</li>
-								<li><a class="dropdown-item" href="mhyj/ppfz.html">品牌历程</a></li>
-								<li>
-									<div class="dropdown-divider"></div>
+								<li class="nav-item">
+									<a class="nav-link dropdown-toggle" href="#" id="dropdown03"
+										data-bs-toggle="dropdown" aria-expanded="false">有加生活</a>
+									<ul class="dropdown-menu" aria-labelledby="dropdown03">
+										<li><a class="dropdown-item" href="ppgs.html">周边商城</a></li>
+									</ul>
 								</li>
-								<li><a class="dropdown-item" href="mhyj/ryzz.html">荣誉资质</a></li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown"
-								aria-expanded="false">系列产品</a>
-							<ul class="dropdown-menu" aria-labelledby="dropdown02">
-								<li><a class="dropdown-item" href="xlcp/rongyu.html">容与</a></li>
-								<li>
-									<div class="dropdown-divider"></div>
+								<li class="nav-item">
+									<a class="nav-link" href="yjsj.html">资讯中心</a>
 								</li>
-								<li><a class="dropdown-item" href="#">昕辰</a></li>
+								<li class="nav-item">
+									<a class="nav-link" href="lxwm.html">联系我们</a>
+								</li>
 							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
-								aria-expanded="false">有加生活</a>
-							<ul class="dropdown-menu" aria-labelledby="dropdown03">
-								<li><a class="dropdown-item" href="ppgs.html">周边商城</a></li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="yjsj.html">资讯中心</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="lxwm.html">联系我们</a>
-						</li>
-					</ul>
-				</div> <!-- end of navbar-collapse -->
-			</nav>
-		</div>
-
-
-
-
-		<div class="banner ibanner">
-			<div class="swiper-container swiper-container-banner">
-				<!--        <ul class="swiper-wrapper swiper-wrapper-banner">-->
-				<!--            <li class="swiper-slide swiper-slide-banner">-->
-				<!--                <a href="#" target="_blank">-->
-				<!--                    <img src="static/picture/ma.jpg" style="width: 100%; height: 100%;" alt="幻二"/>-->
-				<!--                </a>-->
-				<!--            </li>-->
-				<!--            <li class="swiper-slide swiper-slide-banner">-->
-				<!--                <a href="#" target="_blank">-->
-				<!--                    <img src="static/picture/mb.jpg" style="width: 100%; height: 100%;" alt="幻三"/>-->
-				<!--                </a>-->
-				<!--            </li>-->
-				<!--        </ul>-->
-
-				<!--        <div class="swiper-button-prev swiper-button-prev-banner fadeInLeft wow"></div>-->
-				<!--        <div class="swiper-button-next swiper-button-next-banner fadeInRight wow"></div>-->
-				<ul class="swiper-wrapper swiper-wrapper-banner">
-					<li class="swiper-slide swiper-slide-banner"><img id="oss_img_ry" style="width: 100%; height: 100%;"
-							alt=" 幻一">
-					</li>
-					<li class="swiper-slide swiper-slide-banner"><img id="oss_img_xc" style="width: 100%; height: 100%;"
-							alt=" 幻二">
-					</li>
-					<li class="swiper-slide swiper-slide-banner"><img id="oss_img_zm" style="width: 100%; height: 100%;"
-							alt=" 幻二">
-					</li>
-				</ul>
-				<div class="swiper-button-prev swiper-button-prev-banner fadeInLeft wow"></div>
-				<div class="swiper-button-next swiper-button-next-banner fadeInRight wow"></div>
-			</div>
-		</div>
-
-
-		<div id="focus" class="picFocus">
-			<div class="card">
-				<img id="ts" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts.jpg"
-					style="width: 100%; height: 100%;" />
-			</div>
-			<div class="hd">
-				<ul></ul>
-			</div>
-			<div class="bd">
-				<ul style="max-height: 70%;">
-					<li><a href="#"><img id="oss_img_ts_ry" _src=""
-								src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts_ry.jpg"
-								style="width: 100%; height: 100%;" /></a></li>
-					<li><a href="#"><img id="oss_img_ts_xc" _src=""
-								src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts_xc.jpg"
-								style="width: 100%; height: 100%;" /></a></li>
-				</ul>
-			</div>
-		</div>
-
-		<img id="xty" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/xty.jpg" style="width: 100%; height: 100%;" />
-
-		<!--这里是为了在这个DIV完毕后立即执行JS，避免整个页面加载完毕才执行。-->
-		<script type="text/javascript">
-			$(document).ready(function() {
-				const pathPrefix = "/home/"
-				// 使用函数获取图片URL
-				const tsRyImageUrl = getOSSImageUrl(pathPrefix + 'ts_ry', 'jpg');
-				const tsXcImageUrl = getOSSImageUrl(pathPrefix + 'ts_xc', 'jpg');
-				$("#oss_img_ts_ry").attr('_src', tsRyImageUrl)
-				$("#oss_img_ts_xc").attr('_src', tsXcImageUrl)
-			});
-
-			TouchSlide({
-				slideCell: "#focus",
-				titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
-				mainCell: ".bd ul",
-				effect: "left",
-				autoPlay: false, //自动播放
-				autoPage: true, //自动分页
-				switchLoad: "_src" //切换加载，真实图片路径为"_src" 
-			});
-		</script>
-
-
-
-		<div class="row call-bg align-items-center" style="margin-top: 30px;">
-			<div class="col-lg-12">
-				<div class="call-action-content" data-cue="zoomIn" data-show="true"
-					style="animation-name: zoomIn; animation-duration: 2500ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
-					<div class="call-action-title">
-						<h2>6项权威专利</h2>
-						<h2>3项国际大奖<h2>
-								<h2>硬实力创领行业标杆</h2>
-					</div>
+						</div>
+					</nav>
 				</div>
 
-				<div class="picScroll">
-					<ul>
-						<li><a href="#/"><img id="oss_img_scroll_1"
-									_src="https://uija.oss-cn-nanjing.aliyuncs.com/home/scroll_1.jpg"
-									src="static/images/loading.gif" /></a></li>
-						<li><a href="#/"><img id="oss_img_scroll_2"
-									_src="https://uija.oss-cn-nanjing.aliyuncs.com/home/scroll_2.jpg"
-									src="static/images/loading.gif" /></a></li>
-						<li><a href="#/"><img id="oss_img_scroll_3"
-									_src="https://uija.oss-cn-nanjing.aliyuncs.com/home/scroll_3.jpg"
-									src="static/images/loading.gif" /></a></li>
-						<li><a href="#/"><img id="oss_img_scroll_4"
-									_src="https://uija.oss-cn-nanjing.aliyuncs.com/home/scroll_4.jpg"
-									src="static/images/loading.gif" /></a></li>
-					</ul>
-
-					<a class="prev" href="javascript:void(0)"></a>
-					<a class="next" href="javascript:void(0)"></a>
-				</div>
 			</div>
-		</div>
-
-		<!--这里是为了在这个DIV完毕后立即执行JS，避免整个页面加载完毕才执行。-->
-		<script type="text/javascript">
-			$(document).ready(function() {
-				const pathPrefix = "/home/"
-				// 使用函数获取图片URL
-				const scrollImageUrl_1 = getOSSImageUrl(pathPrefix + 'scroll_1', 'jpg');
-				const scrollImageUrl_2 = getOSSImageUrl(pathPrefix + 'scroll_2', 'jpg');
-				const scrollImageUrl_3 = getOSSImageUrl(pathPrefix + 'scroll_3', 'jpg');
-				const scrollImageUrl_4 = getOSSImageUrl(pathPrefix + 'scroll_4', 'jpg');
-				// https://uija.oss-cn-nanjing.aliyuncs.com/home/scroll_4.jpg
-				// console.log(scrollImageUrl_4)
-				$("#oss_img_scroll_1").attr({
-					'_src': scrollImageUrl_1,
-					'src': scrollImageUrl_1
-				})
-				$("#oss_img_scroll_2").attr({
-					'_src': scrollImageUrl_2,
-					'src': scrollImageUrl_2
-				})
-				$("#oss_img_scroll_3").attr({
-					'_src': scrollImageUrl_3,
-					'src': scrollImageUrl_3
-				})
-				$("#oss_img_scroll_4").attr({
-					'_src': scrollImageUrl_4,
-					'src': scrollImageUrl_4
-				})
-			});
-
-			jQuery(".picScroll").slide({
-				mainCell: "ul",
-				effect: "leftMarquee",
-				autoPlay: true,
-				vis: 4, // 可视个数
-				autoPlay: true,
-				interTime: 20, // 运行速度
-				mouseOverStop: false, // 鼠标移到容器层 是否停止播放
-				switchLoad: "_src" // 切换加载，真实图片路径为"_src"
-			});
-		</script>
-
-		<img id="ys" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ys.jpg" style="width: 100%; height: 100%;" />
-		<img id="lj" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/xmt.jpg" style="width: 100%; height: 100%;" />
-		<!-- <img src="static/picture/m6.jpg" style="width: 100%; height: 100%;" /> -->
-
-		<div class=" footer">
-			<div class="copyright">
-				<!-- <div class="container">
-					<p>Copyright © 2023&nbsp; </p>
-					<p>美好有加智能科技有限公司&nbsp; 版权所有 &nbsp;</p>
-					<p><a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">苏ICP备2023047043号-2</a>
-					</p>
-					<div style="width:260px;margin:0 auto; padding:5px 0;">
-						<a target="_blank"
-							href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41031102000545"
-							style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img
-								src="static/picture/ga.png" style="float:left;" />
-							<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
-								苏公网安备32059002004686号</p>
-						</a>
-					</div>
+			<!-- <div class="mheader">
+					<nav id="navbar" class="navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+						<div class="mlogo">
+							<a href="m.html">
+								<img src="static/picture/uija.png" alt="uija">
+							</a>
+						</div>
+						<div class="navbar-toggler nav_button" type="button" id="head_menu"
+							aria-label="Toggle navigation">
+						</div>
+						<div class="m_list navbar-collapse offcanvas-collapse mobile-menu" id="navbarsExampleDefault">
+							<ul class="m_one navbar-nav ms-auto navbar-nav-scroll">
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="dropdown01"
+										data-bs-toggle="dropdown" aria-expanded="false">美好有加</a>
+									<ul class="dropdown-menu" aria-labelledby="dropdown01">
+										<li><a class="dropdown-item" href="mhyj/ppjs.html">品牌介绍</a></li>
+										<li>
+											<div class="dropdown-divider"></div>
+										</li>
+										<li><a class="dropdown-item" href="mhyj/pqln.html">品牌理念</a></li>
+										<li>
+											<div class="dropdown-divider"></div>
+										</li>
+										<li><a class="dropdown-item" href="mhyj/ppfz.html">品牌历程</a></li>
+										<li>
+											<div class="dropdown-divider"></div>
+										</li>
+										<li><a class="dropdown-item" href="mhyj/ryzz.html">荣誉资质</a></li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="dropdown02"
+										data-bs-toggle="dropdown" aria-expanded="false">系列产品</a>
+									<ul class="dropdown-menu" aria-labelledby="dropdown02">
+										<li><a class="dropdown-item" href="xlcp/rongyu.html">容与</a></li>
+										<li>
+											<div class="dropdown-divider"></div>
+										</li>
+										<li><a class="dropdown-item" href="#">昕辰</a></li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="dropdown03"
+										data-bs-toggle="dropdown" aria-expanded="false">有加生活</a>
+									<ul class="dropdown-menu" aria-labelledby="dropdown03">
+										<li><a class="dropdown-item" href="ppgs.html">周边商城</a></li>
+										<li>
+											<div class="dropdown-divider"></div>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="yjsj.html">资讯中心</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="lxwm.html">联系我们</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
 				</div> -->
-				<div class="container">
-					<div class="footer-col first">
-						<h6>有加总部地址</h6>
-						<p class="p-small">苏州工业园区宏业路168号标准厂房E幢5094室</p>
-					</div> <!-- end of footer-col -->
-					<div class="footer-col second">
-						<h6>有加运营中心地址</h6>
-						<p class="p-small">河南省洛阳市伊滨区联东U谷洛阳国际企业港8号</p>
-					</div> <!-- end of footer-col -->
-					<div class="footer-col third">
-						<ul class="footer-ul-list">
-							<li><span>有加官网: </span>
-								<p class="p-small">www.uija.cn</p>
+			<div class="wrap">
+
+				<div class="banner ibanner">
+					<div class="swiper-container swiper-container-banner">
+						<!--        <ul class="swiper-wrapper swiper-wrapper-banner">-->
+						<!--            <li class="swiper-slide swiper-slide-banner">-->
+						<!--                <a href="#" target="_blank">-->
+						<!--                    <img src="static/picture/ma.jpg" style="width: 100%; height: 100%;" alt="幻二"/>-->
+						<!--                </a>-->
+						<!--            </li>-->
+						<!--            <li class="swiper-slide swiper-slide-banner">-->
+						<!--                <a href="#" target="_blank">-->
+						<!--                    <img src="static/picture/mb.jpg" style="width: 100%; height: 100%;" alt="幻三"/>-->
+						<!--                </a>-->
+						<!--            </li>-->
+						<!--        </ul>-->
+
+						<!--        <div class="swiper-button-prev swiper-button-prev-banner fadeInLeft wow"></div>-->
+						<!--        <div class="swiper-button-next swiper-button-next-banner fadeInRight wow"></div>-->
+						<ul class="swiper-wrapper swiper-wrapper-banner">
+							<li class="swiper-slide swiper-slide-banner"><img id="oss_img_ry"
+									style="width: 100%; height: 100%;" alt=" 幻一">
 							</li>
-							<li><span>服务热线: </span>
-								<p class="p-small">400-673-7687</p>
+							<li class="swiper-slide swiper-slide-banner"><img id="oss_img_xc"
+									style="width: 100%; height: 100%;" alt=" 幻二">
+							</li>
+							<li class="swiper-slide swiper-slide-banner"><img id="oss_img_zm"
+									style="width: 100%; height: 100%;" alt=" 幻二">
 							</li>
 						</ul>
-					</div> <!-- end of footer-col -->
+						<div class="swiper-button-prev swiper-button-prev-banner fadeInLeft wow"></div>
+						<div class="swiper-button-next swiper-button-next-banner fadeInRight wow"></div>
+					</div>
+				</div>
+
+
+				<div id="focus" class="picFocus">
+					<div class="card">
+						<img id="ts" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts.jpg"
+							style="width: 100%; height: 100%;" />
+					</div>
+					<div class="hd">
+						<ul></ul>
+					</div>
+					<div class="bd">
+						<ul style="max-height: 70%;">
+							<li><a href="#"><img id="oss_img_ts_ry" _src=""
+										src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts_ry.jpg"
+										style="width: 100%; height: 100%;" /></a></li>
+							<li><a href="#"><img id="oss_img_ts_xc" _src=""
+										src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ts_xc.jpg"
+										style="width: 100%; height: 100%;" /></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<img id="xty" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/xty.jpg"
+					style="width: 100%; height: 100%;" />
+
+				<!--这里是为了在这个DIV完毕后立即执行JS，避免整个页面加载完毕才执行。-->
+				<script type="text/javascript">
+					$(document).ready(function() {
+						const pathPrefix = "/home/"
+						// 使用函数获取图片URL
+						const tsRyImageUrl = getOSSImageUrl(pathPrefix + 'ts_ry', 'jpg');
+						const tsXcImageUrl = getOSSImageUrl(pathPrefix + 'ts_xc', 'jpg');
+						$("#oss_img_ts_ry").attr('_src', tsRyImageUrl)
+						$("#oss_img_ts_xc").attr('_src', tsXcImageUrl)
+					});
+
+					TouchSlide({
+						slideCell: "#focus",
+						titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+						mainCell: ".bd ul",
+						effect: "left",
+						autoPlay: false, //自动播放
+						autoPage: true, //自动分页
+						switchLoad: "_src" //切换加载，真实图片路径为"_src" 
+					});
+				</script>
+
+
+
+				<div class="row call-bg align-items-center" style="margin-top: 30px;">
+					<div class="col-lg-12">
+						<div class="call-action-content" data-cue="zoomIn" data-show="true"
+							style="animation-name: zoomIn; animation-duration: 2500ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+							<div class="call-action-title">
+								<h2>6项权威专利</h2>
+								<h2>3项国际大奖<h2>
+										<h2>硬实力创领行业标杆</h2>
+							</div>
+						</div>
+
+						<div class="picScroll">
+							<ul>
+								<li><a href="#/"><img id="oss_img_scroll_1"
+											_src="https://uija.oss-cn-nanjing.aliyuncs.com/home/scroll_1.jpg"
+											src="static/images/loading.gif" /></a></li>
+								<li><a href="#/"><img id="oss_img_scroll_2"
+											_src="https://uija.oss-cn-nanjing.aliyuncs.com/home/scroll_2.jpg"
+											src="static/images/loading.gif" /></a></li>
+								<li><a href="#/"><img id="oss_img_scroll_3"
+											_src="https://uija.oss-cn-nanjing.aliyuncs.com/home/scroll_3.jpg"
+											src="static/images/loading.gif" /></a></li>
+								<li><a href="#/"><img id="oss_img_scroll_4"
+											_src="https://uija.oss-cn-nanjing.aliyuncs.com/home/scroll_4.jpg"
+											src="static/images/loading.gif" /></a></li>
+							</ul>
+
+							<a class="prev" href="javascript:void(0)"></a>
+							<a class="next" href="javascript:void(0)"></a>
+						</div>
+					</div>
+				</div>
+
+				<!--这里是为了在这个DIV完毕后立即执行JS，避免整个页面加载完毕才执行。-->
+				<script type="text/javascript">
+					$(document).ready(function() {
+						const pathPrefix = "/home/"
+						// 使用函数获取图片URL
+						const scrollImageUrl_1 = getOSSImageUrl(pathPrefix + 'scroll_1', 'jpg');
+						const scrollImageUrl_2 = getOSSImageUrl(pathPrefix + 'scroll_2', 'jpg');
+						const scrollImageUrl_3 = getOSSImageUrl(pathPrefix + 'scroll_3', 'jpg');
+						const scrollImageUrl_4 = getOSSImageUrl(pathPrefix + 'scroll_4', 'jpg');
+						// https://uija.oss-cn-nanjing.aliyuncs.com/home/scroll_4.jpg
+						// console.log(scrollImageUrl_4)
+						$("#oss_img_scroll_1").attr({
+							'_src': scrollImageUrl_1,
+							'src': scrollImageUrl_1
+						})
+						$("#oss_img_scroll_2").attr({
+							'_src': scrollImageUrl_2,
+							'src': scrollImageUrl_2
+						})
+						$("#oss_img_scroll_3").attr({
+							'_src': scrollImageUrl_3,
+							'src': scrollImageUrl_3
+						})
+						$("#oss_img_scroll_4").attr({
+							'_src': scrollImageUrl_4,
+							'src': scrollImageUrl_4
+						})
+					});
+
+					jQuery(".picScroll").slide({
+						mainCell: "ul",
+						effect: "leftMarquee",
+						autoPlay: true,
+						vis: 4, // 可视个数
+						autoPlay: true,
+						interTime: 20, // 运行速度
+						mouseOverStop: false, // 鼠标移到容器层 是否停止播放
+						switchLoad: "_src" // 切换加载，真实图片路径为"_src"
+					});
+				</script>
+
+				<img id="ys" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/ys.jpg"
+					style="width: 100%; height: 100%;" />
+				<img id="lj" src="https://uija.oss-cn-nanjing.aliyuncs.com/home/xmt.jpg"
+					style="width: 100%; height: 100%;" />
+
+				<div class="mfooter">
+					<div class="foot" data-cues="fadeIn">
+						<div class="row">
+							<img id="lj" src="static/picture/17.jpg" style="width: 100%; height: 100%;" />
+						</div>
+					</div>
+					<div class="copyright">
+						<div class="container">
+							<div class="row">
+								<!-- 								<div class="col-md-6" data-cues="fadeIn">
+													<img id="lj" src="static/picture/17.jpg" style="width: 100%; height: 100%;" />
+												</div> -->
+								<div class="col-md-6">
+									<div class="footer-col first">
+										<h6>有加总部地址</h6>
+										<p class="p-small">苏州工业园区宏业路168号标准厂房E幢5094室</p>
+									</div> <!-- end of footer-col -->
+									<div class="footer-col second">
+										<h6>有加运营中心地址</h6>
+										<p class="p-small">河南省洛阳市伊滨区联东U谷洛阳国际企业港8号</p>
+									</div> <!-- end of footer-col -->
+									<div class="footer-col third">
+										<ul class="footer-ul-list">
+											<li><span>有加官网: </span>
+												<p class="p-small">www.uija.cn</p>
+											</li>
+											<li><span>服务热线: </span>
+												<p class="p-small">400-673-7687</p>
+											</li>
+										</ul>
+									</div> <!-- end of footer-col -->
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+
 		<!-- 应用插件标签 start -->
 
 		<!-- 应用插件标签 end -->
 		<div class="opacity"></div>
 		<div class="totop"></div>
 
-
-		<script type="text/javascript" src="static/js/scripts.js"></script>
+		<script type="text/javascript" src="static/js/main.js"></script>
+		<!-- <script type="text/javascript" src="static/js/bottom.js"></script> -->
 
 		<script type="text/javascript">
+			// 获取 iframe 元素
+			// const iframe = document.getElementById('myBottom');
+			// console.log(iframe)
+			// // 根据 iframe 内容高度设置 iframe 高度
+			// function resizeIframe() {
+			//   const iframeDocument = iframe.contentDocument;
+			//   const iframeContent = iframeDocument.getElementById('content');
+			//   iframe.style.height = iframeContent.offsetHeight + 'px';
+			//   window.resizeTo(iframe.offsetWidth, iframe.offsetHeight);
+			// }
+
+			// // 监听 iframe 内容加载完成事件，并执行高度自适应
+			// iframe.onload = resizeIframe;
+
 			$(document).ready(function() {
 				const pathPrefix = "/home/"
 				// 使用函数获取图片URL
@@ -404,5 +402,8 @@
 				$("#oss_img_zm").attr('src', zmImageUrl)
 			});
 		</script>
+
+
+
 	</body>
 </html>

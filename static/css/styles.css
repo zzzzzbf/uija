@@ -15,23 +15,31 @@ html {
 
 
 /* 设置导航栏样式 */
+.header, .mheader {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
 
 /* Navigation */
-.navbar {
+/* .navbar {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	z-index: 999;
-	/*!* //设置透明度 *!*/
-	/*background-color: rgb(236, 241, 236, 0.3);*/
-
-	/*background-color: #00000070;*/
-
 	padding-top: 1.75rem;
 	background-color: transparent;
 	box-shadow: none;
 	transition: all 0.2s;
+} */
+.navbar {
+	border: none;
+	position: relative;
+	padding-top: 1.75rem;
 }
 
 .navbar.extra-page {
@@ -42,6 +50,17 @@ html {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 }
+
+/* 移动端底部样式 */
+.mfooter{width: 100%; height: auto; position: relative; z-index: 3; }
+.copyright .footer-col{text-align: left;}
+.copyright .footer-col .p-small{color: #ffffff;opacity: 0.8;}
+.copyright .footer-col h6 {margin-bottom: 0.34rem;color: #ffffff;opacity: 0.8;}
+.copyright .footer-col h6 {font-weight: 600;font-size: 1.6rem;line-height: 2.2rem;}
+.footer-ul-list {color: #ffffff; opacity: 0.8; margin: 0.7rem 0rem; list-style: none; display: flex;}
+.footer-ul-list li{list-style: none; display: flex; justify-content: center; align-items: center;}
+.footer-ul-list li span{font-size: 4.2vw;font-weight: 600;}
+.footer-ul-list li p{padding-top: 2.2%; margin: 0.2rem 0.7rem; font-weight: 200;}
 
 
 /************************/
@@ -321,6 +340,7 @@ html {
 .offcanvas-collapse.open {
 	visibility: visible;
 	transform: translateX(100%);
+	z-index: 999;
 }
 
 .navbar .navbar-nav {
@@ -350,7 +370,9 @@ html {
 .dropend,
 .dropstart,
 .dropup {
-	position: relative;
+	/* 移动端菜单点击失效问题处理 */
+	/* position: relative; */
+	position: inherit
 }
 
 .dropdown-toggle {
@@ -523,6 +545,6 @@ html {
 	background-color: rgba(0, 0, 0, 0.44);
 }
 
-.case-study-single-box{
+.case-study-single-box {
 	margin-bottom: 10%;
 }

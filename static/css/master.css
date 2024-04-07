@@ -32,6 +32,7 @@ a:focus {outline:none;outline-offset:0;}
 .img_c i img{max-width: 100%;max-height: 100%;}
 
 .class{width: 280px;height: 100%;overflow: hidden;position: fixed;top: 0;left: 0;z-index: 51;background: #63a979;}
+/* .class{position: fixed;top: 0;left: 0;z-index: 51;} */
 .class.on{box-shadow: 2px 0px 10px 2px #545454;}
 .m_list{width: 100%;height: 80%;overflow-y: auto;position: relative;overflow-x: hidden;}
 /*.m_list ul{padding-top: 20px;}*/
@@ -152,8 +153,9 @@ transform:translate3d(0, 0, 0);
 .mlogo a{display: block;height: 100%;overflow: hidden;}
 .mlogo i{width: 100%;height: 70px;display: table-cell;vertical-align: middle;}
 .mlogo i img{max-width: 100%;max-height: 100%;} */
-.mheader{width: 100%;height: auto;    position: relative;z-index: 3;padding: 0 1% ;display: none;}
-.mlogo{position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); max-width: 50%; max-height: 50%; z-index: 3;}
+.mheader{width: 100%;height: auto;    position: relative;z-index: 3;display: none;}
+/* .mlogo{position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); max-width: 50%; max-height: 50%; z-index: 3;} */
+.mlogo{position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); max-width: 50%; max-height: 60%; z-index: 3;}
 .mlogo img{ max-height: 100%;display: block;margin: 0 auto;} 
 /* .mlogo{position: absolute;top:0px; left: 50%;transform: translateX(-50%);overflow: hidden;z-index: 3;}
 .mlogo a{display: block;height: 100%;overflow: hidden;}
@@ -312,8 +314,7 @@ transform:translate3d(0, 0, 0);
 
 
 
-.footer{width: 100%;height: auto;overflow: hidden;background: #24272c;}
-.foot{width: 100%;height: auto;overflow: hidden;}
+
 .site_map{width: 45%;height: auto;overflow: hidden;float: left;}
 .site_map ul{width: 100%;height: auto;overflow: hidden;}
 .site_map ul li{width: 32%;height: auto;overflow: hidden;float: left;font-size: 18px;}
@@ -342,19 +343,13 @@ transform:translate3d(0, 0, 0);
 .linker ul li ul li{}
 .linker ul li ul li a{color: #808080;line-height: 30px;height: 30px;}
 .linker ul li ul li a:hover{color: #f25c05;}
+
+
+.footer{width: 100%;height: auto;overflow: hidden;background: #24272c;}
+.foot{width: 100%;height: auto;overflow: hidden;}
 .copyright{width: 100%;height: auto;overflow: hidden;line-height: 26px;color: #6c737e;padding: 18px 0 18px;background: #1b1e23;text-align: center;}
 .copyright a{color: #6c737e;}
 .copyright a:hover{color: #f25c05;}
-
-/* 移动端底部样式 */
-.copyright .footer-col{text-align: left;}
-.copyright .footer-col .p-small{color: #ffffff;opacity: 0.8;}
-.copyright .footer-col h6 {margin-bottom: 0.34rem;color: #ffffff;opacity: 0.8;}
-.copyright .footer-col h6 {font-weight: 600;font-size: 1.6rem;line-height: 2.2rem;}
-.footer-ul-list {color: #ffffff; opacity: 0.8; margin: 0.7rem 0rem; list-style: none; display: flex;}
-.footer-ul-list li{list-style: none; display: flex; justify-content: center; align-items: center;}
-.footer-ul-list li span{font-size: 4.2vw;font-weight: 600;}
-.footer-ul-list li p{padding-top: 2.2%; margin: 0.2rem 0.7rem; font-weight: 200;}
 
 
 .totop{width: 64px;height: 58px;background: url(../images/totop.png) #f25c05 center center no-repeat;background-size: 100%!important;position: fixed;right: 15px;bottom: 8%;z-index: 20;filter:alpha(opacity=0);opacity: 0;transition: 400ms;}
@@ -507,12 +502,12 @@ transform:translate3d(0, 0, 0);
 
 @media (min-width: 992px) and (max-width: 1199px){
 	.header{height: 108px;}
-	.logo{width: 288px;height: 108px;}
-	.logo i{width: 288px;height: 108px;}
-	.nav{padding: 30px 30px 0 298px;}
-	.nav ul li a{line-height: 78px;height: 78px;}
-	.nav ul li .two_box{width: 378px;}
-	.nav ul li .two_box:before{width: 236px;}
+	/* .logo{width: 288px;height: 108px;} */
+	/* .logo i{width: 288px;height: 108px;} */
+	/* .nav{padding: 30px 30px 0 298px;} */
+	/* .nav ul li a{line-height: 78px;height: 78px;} */
+	/* .nav ul li .two_box{width: 378px;} */
+	/* .nav ul li .two_box:before{width: 236px;} */
 	.nav ul li ul{width: 142px;}
 	.nav ul li ul li a,.nav ul li.cu ul li a,.nav ul li.on ul li a{line-height: 40px;height: 40px;}
 	.nav ul li .two_box .nav_img{width: 236px;padding: 18px;}
@@ -646,7 +641,9 @@ transform:translate3d(0, 0, 0);
 
 @media (max-width: 991px){
 	.header{display: none;}
+	.footer{display: none;}
 	.mheader{display: block;}
+	.mfooter{display: block;}
 	
 	.top{position: relative;background: #63a979;}
 	.top:before{height: 20px;}
