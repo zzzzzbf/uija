@@ -273,7 +273,7 @@ $(document).ready(function() {
 		var itime = index / 10 + 's';
 		$(this).attr('data-wow-delay', itime);
 	});
-	$(".case_middle").addClass('fadeIn wow');
+	$(".foot,.case_middle").addClass('fadeIn wow');
 	$(".menu,.head_bt,.pro_slide,.copyright,.right_below,.search_list ul li").addClass('fadeInUp wow');
 	$(".head_nr,.left,.hint").addClass('fadeInDown wow');
 	$(".case_right,.site_map").addClass('fadeInLeft wow');

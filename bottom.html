@@ -20,16 +20,16 @@
 	</head>
 	<body>
 		<div class="footer">
-			<div class="foot" data-cues="fadeIn">
+			<div class="foot">
 				<div class="row">
 					<img src="static/picture/gw_07.jpg" style="width: 100%; height: 100%;" />
 				</div>
 			</div>
-			<div class="copyright" style="padding: 1.6rem; 0">
-				<div class="container">
+			<div class="copyright" data-wow-delay="1s"  style="padding: 1.6rem; 0">
+				<div class="container" style="font-size: 2rem; line-height: 2.6rem;">
 					<p>Copyright 2024&nbsp; 美好有加智能科技有限公司&nbsp; 版权所有 &nbsp;</p>
 					<p><a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">苏ICP备2023047043号-2</a></p>
-					<div style="width:260px;margin:0 auto; padding:5px 0;">
+					<div style="margin:0 auto; padding:0.5% 0;">
 						<a target="_blank"
 							href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41031102000545"
 							style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img
@@ -97,13 +97,21 @@
 			function calcPageHeight() {
 				var cHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight)
 				var sHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight)
-				var height = Math.max(cHeight, sHeight)
-				return height
+				// 选择第一个匹配的元素
+				var element = document.querySelector(".visible-xs");
+				if (element) {
+					// 获取元素的计算后的样式
+					var style = window.getComputedStyle(element);
+					// 获取display值
+					var displayValue = style.display;
+					// 非手机端
+					if (displayValue === 'none') {
+						return Math.max(cHeight, sHeight)
+					} else {
+						return Math.min(cHeight, sHeight)
+					}
+				}
 			}
-		</script>
-
-		<script>
-
 		</script>
 
 	</body>

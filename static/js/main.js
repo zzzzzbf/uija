@@ -9,6 +9,7 @@ window.addEventListener('beforeunload', function() {
 
 $(function() {
 
+	
 	//======< scrollcue js >======
 	scrollCue.init({
 		duration: 2500,
@@ -17,7 +18,6 @@ $(function() {
 		smartSpeed: 5000
 
 	})
-
 
 	window.onload = function() {
 		// 移动端样式
@@ -30,10 +30,7 @@ $(function() {
 			var nav = wrap.querySelector("nav");
 			nav.classList.toggle("navbar");
 		}
-		var iframe = document.getElementById('myBottom');
-		iframe.onload = function() {
-			iframe.contentWindow.postMessage('getHeight', 'http://uij.cn');
-		};
+		
 
 		window.addEventListener('message', function(event) {
 			if (event.origin === 'http://iframe.domain.com' && event.data === 'sendHeight') {
@@ -216,20 +213,21 @@ if (dropdownCheck !== null) {
 const friendsFinish = function() {
 	window.addEventListener('message', function(event) {
 		var iframe = document.getElementById("myBottom")
-		
-		// 选择第一个匹配的元素
-		var element  = document.querySelector(".visible-xs");
-		if( element ){
-			// 获取元素的计算后的样式
-			var style = window.getComputedStyle(element);
-			// 获取display值
-			var displayValue = style.display;
-			// 非手机端
-			if(displayValue==='none'){
-				return iframe.style.height = (event.data + 120) / 1.2 + "px";
-				// return iframe.style.height = (event.data +20) / 1.5 + "px";
-			}
-		}
-		iframe.style.height = (event.data + 120) / 2.2 + "px";
+
+		// // 选择第一个匹配的元素
+		// var element  = document.querySelector(".visible-xs");
+		// if( element ){
+		// 	// 获取元素的计算后的样式
+		// 	var style = window.getComputedStyle(element);
+		// 	// 获取display值
+		// 	var displayValue = style.display;
+		// 	// 非手机端
+		// 	if(displayValue==='none'){
+		// 		return iframe.style.height = (event.data + 120) / 1.2 + "px";
+		// 		// return iframe.style.height = (event.data +20) / 1.5 + "px";
+		// 	}
+		// }
+		// iframe.style.height = (event.data + 120) / 2.2 + "px";
+		iframe.style.height = event.data + "px";
 	})
 }
