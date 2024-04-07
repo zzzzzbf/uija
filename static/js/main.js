@@ -11,10 +11,10 @@ $(function() {
 
 	//======< scrollcue js >======
 	scrollCue.init({
-	    duration : 2500,
-	    interval : -0.7,
-	    percentage : 0.90,
-	    smartSpeed: 5000
+		duration: 2500,
+		interval: -0.7,
+		percentage: 0.90,
+		smartSpeed: 5000
 
 	})
 
@@ -30,6 +30,19 @@ $(function() {
 			var nav = wrap.querySelector("nav");
 			nav.classList.toggle("navbar");
 		}
+		var iframe = document.getElementById('myBottom');
+		iframe.onload = function() {
+			iframe.contentWindow.postMessage('getHeight', 'http://uij.cn');
+		};
+
+		window.addEventListener('message', function(event) {
+			if (event.origin === 'http://iframe.domain.com' && event.data === 'sendHeight') {
+				var height = event.source.frameElement.height;
+				console.log('Iframe height is: ' + height);
+				// 这里可以根据获取到的高度来设置父文档的高度，实现自适应
+			}
+		}, false);
+
 		// scrollFunction();
 	};
 
@@ -168,12 +181,12 @@ function toggleDropdown(e) {
 	let _m = document.querySelector(".dropdown-menu", _d);
 
 	setTimeout(
-		function () {
-		const shouldOpen = _d.matches(":hover");
-		_m.classList.toggle("show", shouldOpen);
-		_d.classList.toggle("show", shouldOpen);
+		function() {
+			const shouldOpen = _d.matches(":hover");
+			_m.classList.toggle("show", shouldOpen);
+			_d.classList.toggle("show", shouldOpen);
 
-		_d.setAttribute("aria-expanded", shouldOpen);
+			_d.setAttribute("aria-expanded", shouldOpen);
 		},
 		e.type === "mouseleave" ? 300 : 0
 	);
@@ -181,7 +194,7 @@ function toggleDropdown(e) {
 
 // On hover
 const dropdownCheck = document.querySelector('.dropdown');
-if (dropdownCheck !== null) { 
+if (dropdownCheck !== null) {
 	document.querySelector(".dropdown").addEventListener("mouseleave", toggleDropdown);
 	document.querySelector(".dropdown").addEventListener("mouseover", toggleDropdown);
 
@@ -200,9 +213,23 @@ if (dropdownCheck !== null) {
 }
 
 
-// function resizeIframe(iframe) {
-// 	console.log(iframe.contentWindow.document.documentElement.clientHeight)
-// 	console.log(iframe.contentWindow.document.documentElement.scrollHeight)
-// 	iframe.style.height = iframe.contentWindow.document.documentElement.scrollHeight + 'px';
-// 	document.documentElement.clientHeight;
-// }
+const friendsFinish = function() {
+	window.addEventListener('message', function(event) {
+		var iframe = document.getElementById("myBottom")
+		
+		// 选择第一个匹配的元素
+		var element  = document.querySelector(".visible-xs");
+		if( element ){
+			// 获取元素的计算后的样式
+			var style = window.getComputedStyle(element);
+			// 获取display值
+			var displayValue = style.display;
+			// 非手机端
+			if(displayValue==='none'){
+				return iframe.style.height = (event.data + 120) / 1.2 + "px";
+				// return iframe.style.height = (event.data +20) / 1.5 + "px";
+			}
+		}
+		iframe.style.height = (event.data + 120) / 2.2 + "px";
+	})
+}

@@ -51,16 +51,7 @@ html {
 	padding-bottom: 0.5rem;
 }
 
-/* 移动端底部样式 */
-.mfooter{width: 100%; height: auto; position: relative; z-index: 3; }
-.copyright .footer-col{text-align: left;}
-.copyright .footer-col .p-small{color: #ffffff;opacity: 0.8;}
-.copyright .footer-col h6 {margin-bottom: 0.34rem;color: #ffffff;opacity: 0.8;}
-.copyright .footer-col h6 {font-weight: 600;font-size: 1.6rem;line-height: 2.2rem;}
-.footer-ul-list {color: #ffffff; opacity: 0.8; margin: 0.7rem 0rem; list-style: none; display: flex;}
-.footer-ul-list li{list-style: none; display: flex; justify-content: center; align-items: center;}
-.footer-ul-list li span{font-size: 4.2vw;font-weight: 600;}
-.footer-ul-list li p{padding-top: 2.2%; margin: 0.2rem 0.7rem; font-weight: 200;}
+
 
 
 /************************/
