@@ -155,7 +155,7 @@ transform:translate3d(0, 0, 0);
 .mlogo i img{max-width: 100%;max-height: 100%;} */
 .mheader{width: 100%;height: auto;    position: relative;z-index: 3;display: none;}
 /* .mlogo{position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); max-width: 50%; max-height: 50%; z-index: 3;} */
-.mlogo{position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); max-width: 50%; max-height: 60%; z-index: 3;}
+.mlogo{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 50%; max-height: 60%; z-index: 3;}
 .mlogo img{ max-height: 100%;display: block;margin: 0 auto;} 
 /* .mlogo{position: absolute;top:0px; left: 50%;transform: translateX(-50%);overflow: hidden;z-index: 3;}
 .mlogo a{display: block;height: 100%;overflow: hidden;}
@@ -164,7 +164,7 @@ transform:translate3d(0, 0, 0);
 /* .nav_button{width: 30px;height: 100%;background: url(../images/head_menu.png) center center no-repeat;background-size: 26px;position: absolute;left: 4%;top: 0px;} */
 
 /* .nav_button{max-width: 7%; max-height: 7%; margin: 0px 4.5%;} */
-.nav_button{width: 5%;height: 100%;background: url(../images/head_menu.png) center center no-repeat;position: absolute;left: 5%;top: 15%;}
+.nav_button{width: 5%;height: 100%;background: url(../images/head_menu.png) center center no-repeat;position: absolute;left: 5%;top: 5%;}
 .head_menu{display: block;background: #fff;height: 0.2rem;margin-top: 0.45rem;}
 .msearch{width: 30px;height: 100%;position: absolute;top: 0;right: 12%;background: url(../images/mc_sear.png) center center no-repeat;background-size: 24px;}
 .msearch_box{width: 100%;height: auto;padding: 15px 20px;overflow: hidden;position: absolute;right: 0;background: #f25c05;display: none;}
