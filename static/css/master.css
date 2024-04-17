@@ -46,7 +46,8 @@ a:focus {outline:none;outline-offset:0;}
 .m_list ul li ul .class_back{line-height: 60px;height: 60px;font-size: 17px;color: #63a979;padding: 0 15px;text-indent: 20px;background: url(../images/class_back.png) #fff 15px center no-repeat;background-size: 10px;}
 .m_list ul li ul li{}
 .m_list ul li ul li a{ padding-left: 5.7rem;padding-top: 0.7rem;}
-.m_list ul li ul li a:hover,.m_list ul li ul li a.cu2{background: #2d2d2d;}
+/* .m_list ul li ul li a:hover,.m_list ul li ul li a.cu2{background: #2d2d2d;} */
+.m_list ul li ul li a:hover,.m_list ul li ul li a.cu2{background: rgba(255, 255, 255, 0.2);}
 .m_list ul li ul li ul{}
 .m_list ul li ul li ul li{}
 .m_list ul li ul li ul li a{}
@@ -489,6 +490,11 @@ transform:translate3d(0, 0, 0);
 
 @media (min-width: 1500px){
 	.container{width: 1300px;}
+	
+	h5{font-size: 2rem;
+    letter-spacing: 1.5px;
+    line-height: 2em;
+    text-indent: 2.2em;}
 	
 	.about_item:hover .about_hover{padding: 38px 28px 20px;}
 	.news_show{width: 43%;}
@@ -1136,4 +1142,10 @@ transform:translate3d(0, 0, 0);
 	.det span{padding: 0 16px;line-height: 30px;height: 30px;font-size: 15px;}
 	
 	#oss_img_ts_ry,#oss_img_ts_xc{width: 100%;height: 260px;}
+	
+	
+	h5{font-size: 1.5rem;
+	letter-spacing: 1.5px;
+	line-height: 2em;
+	text-indent: 2.2em;}
 }

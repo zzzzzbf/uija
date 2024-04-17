@@ -22,10 +22,10 @@
 		<div class="footer">
 			<div class="foot">
 				<div class="row">
-					<img src="static/picture/gw_07.jpg" style="width: 100%; height: 100%;" />
+					<img src="static/picture/home/bottom.jpg" style="width: 100%; height: 100%;" />
 				</div>
 			</div>
-			<div class="copyright" data-wow-delay="1s"  style="padding: 1.6rem; 0">
+			<div class="copyright" data-wow-delay="1s" style="padding: 1.6rem; 0">
 				<div class="container" style="font-size: 2rem; line-height: 2.6rem;">
 					<p>Copyright 2024&nbsp; 美好有加智能科技有限公司&nbsp; 版权所有 &nbsp;</p>
 					<p><a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">苏ICP备2023047043号-2</a></p>
@@ -45,6 +45,24 @@
 			<div class="mfooter">
 				<div class="copyright">
 					<div class="container">
+						<p>Copyright © 2023&nbsp; </p>
+						<p>美好有加智能科技有限公司&nbsp; 版权所有 &nbsp;</p>
+						<p><a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">苏ICP备2023047043号-2</a>
+						</p>
+						<div style="width:260px;margin:0 auto; padding:5px 0;">
+							<a target="_blank"
+								href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41031102000545"
+								style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img
+									src="static/picture/ga.png" style="float:left;" />
+								<p
+									style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+									苏公网安备32059002004686号</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="copyright" style="display: none;">
+					<div class="container">
 						<div class="row">
 							<!-- 								<div class="col-md-6" data-cues="fadeIn">
 								<img id="lj" src="static/picture/17.jpg" style="width: 100%; height: 100%;" />
@@ -62,10 +80,17 @@
 									<span>美好有加智能科技(宁波)有限公司</span>
 									<p class="p-small text-muted">浙江省余姚市低塘街道镆剑山村工业区98号</p>
 								</div> <!-- end of footer-col -->
+								<div class="footer-col third">
+									<span>美好有加智能科技(深圳)有限公司</span>
+									<p class="p-small text-muted">深圳市龙岗区宝安街道万乐园工业区A栋厂房401</p>
+								</div> <!-- end of footer-col -->
 								<div class="footer-col fourth">
 									<ul class="footer-ul-list">
-										<li><span>有加官网: </span>
+										<li><span>官网: </span>
 											<p class="p-small" style="opacity: revert">www.uija.cn</p>
+										</li>
+										<li><span>邮箱: </span>
+											<p class="p-small" style="opacity: revert">Mhyj@uija.cn</p>
 										</li>
 										<li><span>服务热线: </span>
 											<p class="p-small" style="opacity: revert">400-673-7687</p>
@@ -95,10 +120,12 @@
 			}
 			// 计算页面的实际高度，iframe自适应会用到
 			function calcPageHeight() {
-				var cHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight)
-				var sHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight)
+			
 				// 选择第一个匹配的元素
 				var element = document.querySelector(".visible-xs");
+			
+				var cHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight)
+				var sHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight)
 				if (element) {
 					// 获取元素的计算后的样式
 					var style = window.getComputedStyle(element);
@@ -108,7 +135,9 @@
 					if (displayValue === 'none') {
 						return Math.max(cHeight, sHeight)
 					} else {
-						return Math.min(cHeight, sHeight)
+						var a = document.body.clientHeight;
+						var b = document.body.scrollHeight;
+						return Math.min(cHeight, sHeight,a,b)
 					}
 				}
 			}

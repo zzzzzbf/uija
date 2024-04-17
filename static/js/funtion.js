@@ -26,6 +26,7 @@ $(document).ready(function() {
 	//nav横向下拉菜单栏
 	$("ul.one li").hover(function() {
 		$(this).addClass("cu")
+		// alert("aaa")
 		$(this).find(".two_box").css('display', 'flex');
 		$(this).find(".two_box").css('display', '#00000099');
 

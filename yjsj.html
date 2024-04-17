@@ -8,6 +8,7 @@
 		<link href="static/picture/plg.jpg" rel="shortcut icon" type="image/x-icon" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
 		<meta name="format-detection" content="telephone=no">
+		<meta name="referrer" content="no-referrer" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="static/css/swiper-3.3.1.min.css" />
@@ -16,195 +17,210 @@
 		<link rel="stylesheet" type="text/css" href="static/css/styles.css" />
 		<link rel="stylesheet" href="static/css/scrollCue.css" type="text/css" media="all">
 
+
+		<style type="text/css">
+			.wxw-img {
+				width: 100%;
+				height: 100%
+			}
+
+			@media (min-width: 1024px) {
+				#top img {
+					width: 100%;
+					height: 100vh !important
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="visible-xs visible-sm">
-				<div class="mheader">
-					<nav id="navbar" class="navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
-						<!-- Image Logo -->
-						<div class="mlogo">
-							<a href="m.html">
-								<img src="static/picture/uija.png" alt="uija">
-							</a>
-						</div>
-						<div class="navbar-toggler nav_button" type="button" id="head_menu"
-							aria-label="Toggle navigation">
-						</div>
-						<div class="m_list navbar-collapse offcanvas-collapse mobile-menu" id="navbarsExampleDefault">
-							<ul class="m_one navbar-nav ms-auto navbar-nav-scroll">
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="dropdown01"
-										data-bs-toggle="dropdown" aria-expanded="false">美好有加</a>
-									<ul class="dropdown-menu" aria-labelledby="dropdown01">
-										<li><a class="dropdown-item" href="mhyj/ppjs.html">品牌介绍</a></li>
-										<li>
-											<div class="dropdown-divider"></div>
-										</li>
-										<li><a class="dropdown-item" href="mhyj/pqln.html">品牌理念</a></li>
-										<li>
-											<div class="dropdown-divider"></div>
-										</li>
-										<li><a class="dropdown-item" href="mhyj/ppfz.html">品牌历程</a></li>
-										<li>
-											<div class="dropdown-divider"></div>
-										</li>
-										<li><a class="dropdown-item" href="mhyj/ryzz.html">荣誉资质</a></li>
-									</ul>
-								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="dropdown02"
-										data-bs-toggle="dropdown" aria-expanded="false">系列产品</a>
-									<ul class="dropdown-menu" aria-labelledby="dropdown02">
-										<li><a class="dropdown-item" href="xlcp/rongyu.html">容与</a></li>
-										<li>
-											<div class="dropdown-divider"></div>
-										</li>
-										<li><a class="dropdown-item" href="#">昕辰</a></li>
-									</ul>
-								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="dropdown03"
-										data-bs-toggle="dropdown" aria-expanded="false">有加生活</a>
-									<ul class="dropdown-menu" aria-labelledby="dropdown03">
-										<li><a class="dropdown-item" href="ppgs.html">周边商城</a></li>
-									</ul>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="yjsj.html">资讯中心</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="lxwm.html">联系我们</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
+			<div id="myWrap"></div>
 
-			</div>
-			<div class="wrap">
-				<div class="header">
-					<nav class="navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
-						<div class="logo"><a href="index.html"><i><img src="static/picture/222.png" alt="美好有加"></i></a>
-						</div>
-						<div class="nav" style="display: flex; justify-content: space-between;">
-							<ul class="one">
 
-								<li class="on"><a href="#">美好有加 </a>
-									<div class="two_box">
-										<ul class="two fl">
-											<li><a href="mhyj/ppjs.html">品牌介绍</a></li>
-											<li><a href="mhyj/pqln.html">品牌理念</a></li>
-											<li><a href="mhyj/ppfz.html">品牌历程</a></li>
-											<li><a href="mhyj/ryzz.html">荣誉资质</a></li>
-										</ul>
-									</div>
-								</li>
-								<li class="on"><a href="#">系列产品 </a>
-									<div class="two_box">
-										<ul class="two fl">
-											<li><a href="xlcp/rongyu.html">容与 </a></li>
-											<li><a href="#">昕辰 </a></li>
-										</ul>
-									</div>
-								</li>
-								<li class="on"><a href="#">有加生活 </a>
-									<div class="two_box">
-										<ul class="two fl">
-											<li><a href="ppgs.html">周边商城 </a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-
-							<ul class="one">
-								<!--                        <li class="on">-->
-								<!--                            <a href="yjsj.html">资讯中心 </a>-->
-								<!--                        </li>-->
-								<li class="on" style="float: right;">
-									<a href="yjsj.html">资讯中心</a>
-									<!--                            <div class="two_box">-->
-									<!--                                <ul class="two fl">-->
-									<!--                                    <li><a href="#">在线顾问 </a></li>-->
-									<!--                                </ul>-->
-									<!--                            </div>-->
-								</li>
-								<!--                        <li class="on"><a>服务热线：400-673-7687</a></li>-->
-							</ul>
-
-							<div
-								style="display: flex;justify-content: center;align-items: center;flex-direction: row-reverse;">
-								<a href="lxwm.html" style="color: #fff; font-size: 16px; text-align: center">联系我们
-								</a>
-							</div>
-						</div>
-					</nav>
-				</div>
-
+			<div class="visible-lg">
 				<div id="top">
-					<img src="static/picture/bb.jpg" style="width: 100%; height: 100%;" />
+					<img src="http://uija.oss-cn-nanjing.aliyuncs.com/10001/20240412/e6b23a172a581c611be89145071777bb.jpg"
+						style="width: 100%; height: 100%;" />
 				</div>
+			</div>
+			<div class="visible-xs visible-sm">
+				<div id="top">
+					<img src="https://uija.oss-cn-nanjing.aliyuncs.com/zxzx/top.jpg" style="width: 100%; height: 100vh;" />
+				</div>
+			</div>
+		
 
-				<div class="main" style="margin: 3.6rem 0rem;">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12 col-md-12">
-								<div class="about_det news_det">
+			<div class="main" style="margin: 3.6rem 0rem;">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
+							<!-- <div class="about_det news_det">
+		
+							<p style="text-align:center;">有加斩获2023美国缪斯设计奖·银奖</p>
+							<p><br></p>
+							<div>
+								<p style="text-align:center"><img src="static/picture/m30.jpg"
+										style="margin: 0px; padding: 0px; border: 0px none; vertical-align: baseline; width: 100%; height: 100%;">
+								</p>
+							</div>
+		
+							<p><br></p>
+		
+							<p style="text-align:center;">2023伦敦设计奖·金奖</p>
+							<p><br></p>
+		
+		
+							<p style="text-align:center;">有加，力图走在时代前沿</p>
+							<p style="text-align:center;">在发展中不断创造，在创造中不断发展</p>
+							<p style="text-align:center;">凭借出色的外观设计、卓越的技术实力</p>
+							<p style="text-align:center;">荣获户外便携式净水器发明专利</p>
+							<p style="text-align:center;">外观设计专利及实用新型专利等多项科技成果</p>
+							<p style="text-align:center;">得到了国家权威机构认可</p>
+							<p style="text-align:center;">并先后斩获美国缪斯设计奖·银奖</p>
+							<p style="text-align:center;">伦敦设计奖·金奖两大奖项</p>
+							<p style="text-align:center;">为有加再添权威背书</p>
+							<p style="text-align:center;">也为有加在净水领域的技术领先地位奠定了坚实基础</p>
+							<p><br></p>
+							<div data-cue="zoomIn">
+								<p style="text-align:center"><img src="static/picture/m31.jpg"
+										style="margin: 0px; padding: 0px; border: 0px none; vertical-align: baseline; width: 100%; height: 100%;">
+								</p>
+							</div>
+						</div> -->
 
-									<p style="text-align:center;">有加斩获2023美国缪斯设计奖·银奖</p>
-									<p><br></p>
-									<div>
-										<p style="text-align:center"><img src="static/picture/m30.jpg"
-												style="margin: 0px; padding: 0px; border: 0px none; vertical-align: baseline; width: 100%; height: 100%;">
-										</p>
-									</div>
-
-									<p><br></p>
-
-									<p style="text-align:center;">2023伦敦设计奖·金奖</p>
-									<p><br></p>
-
-
-									<p style="text-align:center;">有加，力图走在时代前沿</p>
-									<p style="text-align:center;">在发展中不断创造，在创造中不断发展</p>
-									<p style="text-align:center;">凭借出色的外观设计、卓越的技术实力</p>
-									<p style="text-align:center;">荣获户外便携式净水器发明专利</p>
-									<p style="text-align:center;">外观设计专利及实用新型专利等多项科技成果</p>
-									<p style="text-align:center;">得到了国家权威机构认可</p>
-									<p style="text-align:center;">并先后斩获美国缪斯设计奖·银奖</p>
-									<p style="text-align:center;">伦敦设计奖·金奖两大奖项</p>
-									<p style="text-align:center;">为有加再添权威背书</p>
-									<p style="text-align:center;">也为有加在净水领域的技术领先地位奠定了坚实基础</p>
-									<p><br></p>
-									<div>
-										<p style="text-align:center"><img src="static/picture/m31.jpg"
-												style="margin: 0px; padding: 0px; border: 0px none; vertical-align: baseline; width: 100%; height: 100%;">
-										</p>
-									</div>
-								</div>
+							<div class="rich_media_content js_underline_content
+						                       autoTypeSetting24psection
+						            " id="js_content" style="visibility;margin: 0 10%;">
+								<h5 style="text-indent: 2em;line-height: 2em;"><span style="font-size: 14px;"><span
+											style="letter-spacing: 0.034em;text-decoration: none solid rgba(0, 0, 0, 0.9);">4月25-28日，<span
+												style="letter-spacing: 0.034em;text-decoration: none solid rgba(0, 0, 0, 0.9);">作为亚洲礼品行业旗舰展会的<span
+													style="letter-spacing: 0.034em;text-decoration: none solid rgba(0, 0, 0, 0.9);">第32届中国(深圳)国际礼品、工艺品、钟表及家庭用品展览会(以下简称“深圳礼品家居展”)将</span></span>在深圳国际会展中心(宝安新馆)举行</span><span
+											style="letter-spacing: 0.034em;">，届时便携式净水器发明者——有加，将以创领之姿携全球首款便携式净水器「容与」及多款创新产品惊艳亮相，开启饮用水5.0时代。</span><br /></span>
+								</h5>
+								<p style="text-align: center;"><img class="rich_pages wxw-img" data-cropselx1="0"
+										data-cropselx2="578" data-cropsely1="0" data-cropsely2="1252" data-galleryid=""
+										data-imgfileid="100000948" data-ratio="2.1666666666666665" data-s="300,640"
+										data-src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/icF2PicvxKGMckIMWQTibGB72IzovFCFQSPldUUaqP1hHXFbEmI6nJ4aetqhSQrVfpvKIX7PP6jFOMlqt7MjjC9fg/640?wx_fmt=jpeg&amp;from=appmsg"
+										data-type="png" data-w="1080"
+										src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/icF2PicvxKGMckIMWQTibGB72IzovFCFQSPldUUaqP1hHXFbEmI6nJ4aetqhSQrVfpvKIX7PP6jFOMlqt7MjjC9fg/640?wx_fmt=jpeg&amp;from=appmsg" />
+									</h5>
+								<h5 style="text-indent: 2em;line-height: 2em;"><span
+										style="font-size: 14px;letter-spacing: 0.578px;text-wrap: wrap;">有加，在率先洞察到用户多样化的<span
+											style="letter-spacing: 0.578px;">饮水</span>需求场景后，秉承“未来可期，美好有加”的品牌理念，全球首创便携式净水器，为用户创造从室内到户外全场景饮用水新体验。</span><span
+										style="font-size: 14px;letter-spacing: 0.578px;text-wrap: wrap;">并在</span><span
+										style="font-size: 14px;letter-spacing: 0.578px;">产品创新及功能创新方面，有加斩获多项国家专利和国内外设计大奖，以卓越的产品体验，为用户解锁美好生活的无限可能。</span>
+								</h5>
+								<p style="text-align: center;"><img class="rich_pages wxw-img" data-cropselx1="0"
+										data-cropselx2="578" data-cropsely1="0" data-cropsely2="1450" data-galleryid=""
+										data-imgfileid="100000863" data-ratio="1.7221135029354206" data-s="300,640"
+										data-src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/icF2PicvxKGMdYMaowGpfrV40al6CB8k9O4b2iafAXib8Dxrx2icNiaUaJDawdngA3Cr3W4hiaBCExNFtISolWcJkhY1w/640?wx_fmt=jpeg&amp;from=appmsg"
+										data-type="jpeg" data-w="1022"
+										src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/icF2PicvxKGMdYMaowGpfrV40al6CB8k9O4b2iafAXib8Dxrx2icNiaUaJDawdngA3Cr3W4hiaBCExNFtISolWcJkhY1w/640?wx_fmt=jpeg&amp;from=appmsg" />
+									</h5>
+								<h5 style="text-indent: 2em;line-height: 2em;"><span
+										style="font-size: 14px;letter-spacing: 0.578px;text-wrap: wrap;">此次参展，有加在展台布置中，<span
+											style="letter-spacing: 0.578px;text-decoration: none solid rgba(0, 0, 0, 0.9);"><span
+												style="color: rgb(34, 34, 34);font-family: &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;letter-spacing: normal;text-wrap: wrap;word-spacing: 1px;background-color: rgb(255, 255, 255);">对当下中国式的人居理想生活进行了重新审视，</span><span
+												style="text-decoration: none solid rgba(0, 0, 0, 0.9);color: rgb(34, 34, 34);font-family: &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;letter-spacing: normal;text-wrap: wrap;word-spacing: 1px;background-color: rgb(255, 255, 255);">充分借助自然之美</span>延展人们对自然生活和都市家庭的美好想象，<span
+												style="letter-spacing: 0.578px;text-decoration: none solid rgba(0, 0, 0, 0.9);">希望以产品为媒介，引领人们回归自然生活，探寻内心的宁静与和谐。</span></span></span><span
+										style="text-indent: 2em;font-size: var(--articleFontsize);letter-spacing: 0.034em;"></span>
+								</h5>
+								<p style="text-align: center;"><img class="rich_pages wxw-img"
+										data-croporisrc="https://mmbiz.qpic.cn/sz_mmbiz_jpg/icF2PicvxKGMdYMaowGpfrV40al6CB8k9OMvRicCzNzwwnscMmB9E94u3FrTiaHh1roV5P4FcJEp9gJKGJiaZTxhDWg/0?wx_fmt=jpeg&amp;from=appmsg"
+										data-cropx1="0" data-cropx2="1280" data-cropy1="0"
+										data-cropy2="795.0173010380623" data-galleryid="" data-imgfileid="100000949"
+										data-ratio="0.6203703703703703" data-s="300,640"
+										data-src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/icF2PicvxKGMdYMaowGpfrV40al6CB8k9OKY9mgxDwYicoQfmbWQ6ia7KH7qkSAiapTiattPG8zlz5JK5Z7jvfHYJNjQ/640?wx_fmt=jpeg"
+										data-type="jpeg" data-w="1080"
+										src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/icF2PicvxKGMdYMaowGpfrV40al6CB8k9OKY9mgxDwYicoQfmbWQ6ia7KH7qkSAiapTiattPG8zlz5JK5Z7jvfHYJNjQ/640?wx_fmt=jpeg" />
+								</p>
+								<p style="text-align: center;"><img class="rich_pages wxw-img"
+										data-croporisrc="https://mmbiz.qpic.cn/sz_mmbiz_jpg/icF2PicvxKGMdYMaowGpfrV40al6CB8k9O1DicLx0J5MTteepb5EsfPyEKpf02dyQa63gE0iaGNbsf8eoJsjKnMGWg/0?wx_fmt=jpeg&amp;from=appmsg"
+										data-cropx1="0" data-cropx2="1280" data-cropy1="0"
+										data-cropy2="777.3010380622839" data-galleryid="" data-imgfileid="100000950"
+										data-ratio="0.6074074074074074" data-s="300,640"
+										data-src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/icF2PicvxKGMdYMaowGpfrV40al6CB8k9OGqjl8VrqXjXTJWud5PqLPOXFJibquhjia7H6p5PxzTES2WYibibIHj6FIQ/640?wx_fmt=jpeg"
+										data-type="jpeg" data-w="1080"
+										src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/icF2PicvxKGMdYMaowGpfrV40al6CB8k9OGqjl8VrqXjXTJWud5PqLPOXFJibquhjia7H6p5PxzTES2WYibibIHj6FIQ/640?wx_fmt=jpeg" />
+								</p>
+								<h5 style="text-indent: 2em;line-height: 2em;"><span
+										style="font-size: 14px;letter-spacing: 0.578px;text-wrap: wrap;"><span
+											style="letter-spacing: 0.578px;text-decoration: none solid rgba(0, 0, 0, 0.9);"><span
+												style="letter-spacing: 0.578px;text-decoration: none solid rgba(0, 0, 0, 0.9);"><span
+													style="letter-spacing: 0.578px;text-wrap: wrap;">作为亚太地区极具影响力的礼品行业盛会，<span
+														style="font-size: 14px;letter-spacing: 0.578px;text-indent: 34px;text-wrap: wrap;">深</span><span
+														style="font-size: 14px;letter-spacing: 0.578px;text-indent: 34px;text-wrap: wrap;">圳礼品家居展届时将</span><span
+														style="font-size: 14px;letter-spacing: 0.578px;text-decoration: none solid rgba(0, 0, 0, 0.9);">向全球业者展示礼品行业新趋势、新产品和新模式。有加</span></span><span
+													style="letter-spacing: 0.578px;text-wrap: wrap;">便携式净水器作为本次展会的亮点之一，以其小巧便携，不插电，长续航的创新设计，搭载陶氏反渗透直饮过滤技术及现代智能科技，打破了传统净水器只能在室内使用的场景限制，将强势</span></span></span></span><span
+										style="letter-spacing: 0.578px;text-indent: 2em;font-size: 14px;"><span
+											style="letter-spacing: 0.578px;text-decoration-style: solid;text-decoration-color: rgba(0, 0, 0, 0.9);"><span
+												style="letter-spacing: 0.578px;text-decoration-style: solid;text-decoration-color: rgba(0, 0, 0, 0.9);"><span
+													style="letter-spacing: 0.578px;">推动净水器行业从“4.0直饮水时代”踏入“5.0便携式饮用水时代”！</span></span></span></span><span
+										style="letter-spacing: 0.578px;font-size: 14px;text-indent: 2em;"></span></h5>
+								<p style="text-align: center;"><img class="rich_pages wxw-img" data-galleryid=""
+										data-imgfileid="100000958" data-ratio="1.7221135029354206" data-s="300,640"
+										data-src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/icF2PicvxKGMdYMaowGpfrV40al6CB8k9OPtYnAWyaPPuG9wQn1SOlUCKUribsxwOk3Pu1h3fWfLLWgfN44hn18uA/640?wx_fmt=jpeg&amp;from=appmsg"
+										data-type="jpeg" data-w="1022" style=""
+										src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/icF2PicvxKGMdYMaowGpfrV40al6CB8k9OPtYnAWyaPPuG9wQn1SOlUCKUribsxwOk3Pu1h3fWfLLWgfN44hn18uA/640?wx_fmt=jpeg&amp;from=appmsg" />
+								</p>
+								<h5 style="text-indent: 2em;line-height: 2em;"><span
+										style="font-size: 14px;letter-spacing: 0.578px;text-wrap: wrap;"><span
+											style="letter-spacing: 0.578px;text-decoration: none solid rgba(0, 0, 0, 0.9);"><span
+												style="text-decoration: none solid rgba(0, 0, 0, 0.9);letter-spacing: 0.578px;text-wrap: wrap;">与此同时，有加全球首款便携式净水器将面向全国各地区招商。展位在8号馆8F81
+												F83，届时诚邀您莅临展位洽谈合作，共缔无限商机。现场我们还准备了许多精美礼品，各位小伙伴先到先得哦~</span></span></span><span
+										style="font-size: 14px;letter-spacing: 0.578px;text-wrap: wrap;"><span
+											style="letter-spacing: 0.578px;text-decoration: none solid rgba(0, 0, 0, 0.9);"><span
+												style="text-decoration: none solid rgba(0, 0, 0, 0.9);letter-spacing: 0.578px;text-wrap: wrap;"></span></span></span>
+								</h5>
+								<p style="text-align: center;"><img class="rich_pages wxw-img" data-galleryid=""
+										data-imgfileid="100000574" data-ratio="0.48" data-s="300,640"
+										data-src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/icF2PicvxKGMcNia8yZlJlkttwEIkufMPgsFWS1IduRnPHO7MeBFkZVSvXNicJT5NkUSUDgNdCj9jGwTujK4InGdMA/640?wx_fmt=jpeg&amp;from=appmsg"
+										data-type="jpeg" data-w="750" style=""
+										src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/icF2PicvxKGMcNia8yZlJlkttwEIkufMPgsFWS1IduRnPHO7MeBFkZVSvXNicJT5NkUSUDgNdCj9jGwTujK4InGdMA/640?wx_fmt=jpeg&amp;from=appmsg" />
+								</p>
+								<p style="display: none;">
+									<mp-style-type data-value="3"></mp-style-type>
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<iframe src="bottom.html" loading="lazy" id="myBottom" frameborder="0" scrolling="no" width="100%"  onload="friendsFinish()"
-					style="border: none;"></iframe>
 			</div>
+		</div>
+		<iframe src="bottom.html" loading="lazy" id="myBottom" frameborder="0" scrolling="no" width="100%"
+			onload="friendsFinish()" style="border: none;"></iframe>
 
 
+		<!-- 应用插件标签 start -->
 
-			<!-- 应用插件标签 start -->
+		<!-- 应用插件标签 end -->
+		<div class="opacity"></div>
+		<div class="totop"></div>
 
-			<!-- 应用插件标签 end -->
-			<div class="opacity"></div>
-			<div class="totop"></div>
 
-			<script type="text/javascript" src="static/js/jquery-1.11.3.js"></script>
-			<script type="text/javascript" src="static/js/swiper-3.3.1.jquery.min.js"></script>
-			<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
-			<script type="text/javascript" src="static/js/scrollCue.min.js"></script>
-			<script type="text/javascript" src="static/js/wow.min.js"></script>
-			<script type="text/javascript" src="static/js/funtion.js"></script>
-			<script type="text/javascript" src="static/js/main.js"></script>
-			
+		<script type="text/javascript">
+			window.onload = function() {
+
+				// 在用户刷新页面之前将页面滚动到顶部
+				window.scrollTo(0, 0);
+
+				loadScript('static/js/common.js');
+
+				function loadScript(url) {
+					var script = document.createElement('script');
+					script.type = 'text/javascript';
+					script.src = url;
+					document.head.appendChild(script);
+				}
+			};
+			const friendsFinish = function() {
+				window.addEventListener('message', function(event) {
+					var iframe = document.getElementById("myBottom")
+					iframe.style.height = event.data + "px";
+				})
+			}
+		</script>
+
+
 	</body>
 </html>
